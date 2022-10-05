@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indiefolio Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/dashboard-profile.css">
+	<link rel="stylesheet" href="css/theme-responsive.css">
+</head>
+<body>
+<section class="header_fixed"> 
+	<!-- Header Section -->
+	<section class="main-header bg-custom">
+		<div class="container-fluid main-header">
+			<nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+			<a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Indiefolio" title="Indiefolio"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav d-flex align-items-center"> 
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Messages</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Help & Support</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+				</li>
+				<li class="nav-item profile-header">
+					<a class="nav-link pr-4" href="#"><img src="images/profile.png" alt="profile" title=""></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main-btn pt-2 pb-2 text-white" href="#">Upload a project</a>
+				</li> 
+				</ul>
+			</div>
+			</nav>
+		</div> 
+	</section>
+
+	<!-- Mobile sub header -->
+	<div class="mobile-sub-header mobile-ipad-show">
+		<div class="row m-0 align-items-center"> 
+			<!-- Mobile Review Button -->
+			<div class="col-10 d-flex align-items-center pl-0">
+				<div class="mob_get_verify border-0">	
+					<h2><i class="fas fa-arrow-left mr-2"></i> Notification Settings</h2>
+				</div> 
+			</div> 
+		</div> 
+	</div>
+</section>
+
+<!-- Footer Fixed Navigation -->
+<div class="mobile-footer-fixed">
+	<ul>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-align-left mr-1 footer_icon footer-icon-border"></i></span> Dashboard</a></li>
+		<li><a href="#" class="active"><span class="d-block text-center"><i class="fas fa-user mr-1 footer_icon footer-icon-border active"></i></span> Profile</a></li>
+		<li><a href="#"><span class="d-block text-center upload-btn-minus"><i class="fas fa-plus mr-1 footer_icon footer-icon-border mobile-upload"></i></span> Upload</a></li>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-cog mr-1 footer_icon extra-size"></i></span> Setting</a></li>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-comment mr-1 footer_icon extra-size"></i></span> Support</a></li>
+	</ul>
+</div> 
+
+<!-- Mobile Navigation vertical your account section -->
+<div class="card-wrapper mobile-ipad-show ipad-mb-15">
+	<div class="card mob-border-radius-0">
+		<div class="card-body">
+			<div class="p-border d-flex align-items-center flex-wrap">
+				<div>
+					<p class="ex-perience mob-m-0"><img src="images/account-manager.png" alt="profile" title=""></p>
+				</div>
+				<div class="pl-2">
+					<h2 class="profile_title d-block">Bojan Joncic</h2>
+					<span class="profile-subTitle d-block">Manage your account</span>
+				</div> 
+			</div> 
+			<div class="profile-list">
+				<ul> 
+					<li><a href="#" class="active-text-color"><i class="far fa-user-circle mr-1"></i> Profile <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+					<li><a href="#" class="active-text-color"><i class="far fa-id-badge mr-1"></i> Account & Security <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+					<li><a href="#" class="active-text-color"><i class="far fa-bell mr-1"></i> Notification Settings <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+					<li><a href="#" class="active-text-color"><i class="fas fa-receipt mr-1"></i> Billing Information <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Navigation bottom image -->
+<div class="card-wrapper mobile-ipad-show">
+	<div class="card bg-success face-issue bg-image">
+		<div class="card-body"> 
+			<div class="profile-help pX_pY_30">
+				 <h2>Facing issues?</h2>
+				 <h3>We are help to help.</h3>
+				 <button type="button">Get started <i class="fas fa-arrow-right ml-1"></i></button> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="card-wrapper mobile-ipad-show ipad-p-15">
+	<div class="form-group text-right">
+		<input type="submit" class="logout main-btn w-100 mob-font-13" value="Logout">
+	</div> 
+</div>
+
+
+<!-- Main Content Section-->
+<section>
+	<div class="container profile-content mob-p-0 ipad-w-100 ipad-pt-10 pb-0">
+		<div class="row mob-m-0 ipad-m-0">
+			<div class="col-sm-4 col-md-4 col-lg-4 pl-0 profile-inner">
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card mob-border-radius-0">
+						<div class="card-body">
+							<div class="p-border">
+								<p class="profile_img mb-2"><img src="images/account-manager.png" alt="profile" title=""></p>
+								<h2 class="profile_title">Bojan Joncic</h2>
+								<span class="profile-subTitle">Manage your account</span>
+							</div> 
+							<div class="profile-list">
+								<ul>
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Account & Security</a></li>
+									<li><a href="#" class="active-text-color">Notification Settings</a></li>
+									<li><a href="#">Billing Information</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card bg-success bg-image">
+						<div class="card-body"> 
+							<div class="profile-help pX_pY_30">
+								 <h2>Facing issues?</h2>
+								 <h3>We are help to help.</h3>
+								 <button type="button">Get started <i class="fas fa-arrow-right ml-1"></i></button> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Creator section -->
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card bg-success bg-image bg-image-creator">
+						<div class="card-body"> 
+							<div class="profile-help pX_pY_30">
+								 <h2>Facing issues?</h2>
+								 <h3>We are help to help.</h3> 
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="col-sm-8 col-md-8 col-lg-8 pr-0 profile-inner mob-p-0 ipad-w-100 ipad-only-p-0"> 
+				<div class="card-wrapper mob-mb-10 mob-mt-10 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2>EMAIL ALERTS</h2>
+							</div> 
+							<div class="custom_form">
+								<form method="post" action="">
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="projectRequests">Project requests</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="newMessages">New Messages</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="paymentReminders">Payment reminders</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div>
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="resolutionCenter">Resolution Center</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div>  
+								</form>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper mob-mb-10 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2 class="mb-1">EMAIL SUBSCRIPTIONS</h2>
+								<span class="profile-subTitle font-12 mob-font-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+							</div> 
+							<div class="custom_form">
+								<form method="post" action="">
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="updatesAndRecommendations">Updates and recommendations</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="gettingStarted">Getting started series</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="newsAndSpecial">News and special offers</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div>
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="Indiefolio">Indiefolio blog</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div>  
+								</form>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper mob-mb-10 ipad-mb-15 ipad-only-mb-55 mob-mb-90">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2 class="mb-1">EMAIL SUBSCRIPTIONS</h2>
+								<span class="profile-subTitle font-12 mob-font-11">Get browser notifications, even when IFN is closed.</span>
+							</div> 
+							<div class="custom_form">
+								<form method="post" action="">
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="desktop">Desktop</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4 mob-p-15">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-8">
+												<label class="label m-0 text-black" for="mobile">Mobile</label>
+												<span class="profile-subTitle font-12 mob-font-11 d-block">*This sends text alerts to your registered phone number.</span>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-4 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="january" rel="icon-temperature">Enable</option>
+															<option value="february">Disable</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+								</form>
+							</div>  
+						</div>
+					</div>
+				</div>    
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

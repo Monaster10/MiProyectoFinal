@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indiefolio Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/dashboard-profile.css">
+	<link rel="stylesheet" href="css/theme-responsive.css">
+</head>
+<body>
+<!-- Header Section -->
+<section class="main-header bg-custom">
+	<div class="container-fluid main-header">
+		<nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+		  <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Indiefolio" title="Indiefolio"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+		    <ul class="navbar-nav d-flex align-items-center"> 
+			  <li class="nav-item">
+		        <a class="nav-link active" href="#">Dashboard</a>
+			  </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="#">Messages</a>
+			  </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="#">Services</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Help & Support</a>
+			  </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+			  </li>
+			  <li class="nav-item profile-header">
+		        <a class="nav-link pr-4" href="#"><img src="images/profile.png" alt="profile" title=""></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link main-btn pt-2 pb-2 text-white" href="#">Upload a project</a>
+		      </li> 
+		    </ul>
+		  </div>
+		</nav>
+	</div> 
+</section> 
+
+
+<!-- Main Content Section-->
+<section>
+	<div class="container-fluid p-4 mob-p-0 ipad-p-0 ipad-p-30 laptop-p-30">
+		<div class="row m-0 custom_form">
+			<div class="col-sm-3 col-md-3 col-lg-3 profile-inner mob_display_none_off">
+				<div class="card-wrapper">
+					<div class="card user-height-section">
+						<div class="card-body">
+							<div class="dashboard-content">
+								<div class="p-border dashboard"> 
+								</div>
+								<div class="dashboard-welcome">
+									<h2 class="font-weight-600">Welcome to <span class="d-block">IndieFolio, Bojan</span></h2>
+									<p class="sub-text font-14 font-weight-500 mb-0 ipad-font-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+								</div> 
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 mob_dashboard_background_image mob-p-0 ipad-p-0">
+				<div class="mob_dashboard_background position-relative">
+					<img src="images/mob-dashboard-new.jpg" alt="Mobile-Dashboard" class="img-fluid">
+					<div class="mob_banner_text">
+						<div class="dashboard-welcome">
+							<h2 class="font-weight-600">Welcome to IndieFolio, Bojan</h2>
+							<p class="sub-text mob-font-13 font-weight-500 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div> 
+					</div>
+				</div>
+			</div>
+			<!-- Mobile Content -->
+			<div class="col-sm-12 mob-p-0 mob_dashboard_content"> 
+				<div class="card-wrapper">
+					<div class="card user-height-section box-shadow-none border-0">
+						<div class="card-body">
+							<div class="row m-0 py-80 mob-p-0 ipad-p-0">
+								<div class="col-sm-12 position-relative mob-minus-82 ipad-minus-82">
+									<div class="user-application">
+										<img src="images/dashboard-user.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1 active"></span>
+										<span class="timeline-item-dot-2"></span>
+										<span class="timeline-item-dot-3"></span>
+									</div> 
+								</div>
+								<div class="col-sm-12">
+									<div class="timeline-item active">
+										<h1 class="mb-1 active">Submit application</h1>
+										<div class="">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												Thanks for submitting your profile! As part of IFN's protocols, we vet every single <br> creator who joins our platform. You'll hear from us once your profile is reviewed. 
+										   </p>
+										   <button type="button" class="main-btn font-12 mob-w-100 mt-3">Start application</button>
+										</div> 
+									</div> 
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper hidden">
+					<div class="card user-height-section box-shadow-none border-0">
+						<div class="card-body">
+							<div class="row m-0 py-80 mob-p-0 ipad-p-0">
+								<div class="col-sm-12 position-relative mob-minus-82 ipad-minus-82">
+									<div class="user-application">
+										<img src="images/dashboard-under-review.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1"></span>
+										<span class="timeline-item-dot-2 active"></span>
+										<span class="timeline-item-dot-3 profile-under-review"></span>
+									</div> 
+								</div>
+								<div class="col-sm-12">
+									<div class="timeline-item active mt-5">
+										<h1 class="mb-1 active">Profile under review</h1>
+										<div class="">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												Thanks for submitting your profile! As part of IFN's protocols, we vet every single <br> creator who joins our platform. You'll hear from us once your profile is reviewed. 
+										   </p>
+										</div> 
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div> 
+				<div class="card-wrapper hidden">
+					<div class="card user-height-section box-shadow-none border-0">
+						<div class="card-body">
+							<div class="row m-0 py-80 mob-p-0 ipad-p-0">
+								<div class="col-sm-12 position-relative mob-minus-82 ipad-minus-82">
+									<div class="user-application">
+										<img src="images/dashboard-verified.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1 profile-verified"></span>
+										<span class="timeline-item-dot-2 profile-verified"></span>
+										<span class="timeline-item-dot-3 active"></span>
+									</div> 
+								</div>
+								<div class="col-sm-12">
+									<div class="timeline-item active">
+										<h1 class="mb-1 active">Profile Verified</h1>
+										<div class="">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												Congratulations! Your profile is now verified. Welcome to Indiefolio's
+												freelance network.  
+										   </p>
+										   <button type="button" class="main-btn font-12 mob-w-100 mob-mt-20 ipad-my-20">Complete profile</button>
+										   <p class="font-11 font-weight-500 text-secondary mt-2 mb-2">
+											 Complete your profile and add other details to get suitable project offers faster.
+											 </p>
+											 <div class="w-50 mob-ml-mr-auto mob-my-20 ipad-ml-mr-auto ipad-my-20">
+												<p class="position-relative font-15 text-drak-black font-weight-800">
+													<span class="bg-white d-block before_or"></span>
+												</p>
+											</div> 
+											 <p><a href="#" class="text-primary font-14 font-weight-600 mr-3"><i class="fas fa-align-left mr-1 go_to_dashboard"></i> Go to Dashboard <i class="fas fa-arrow-right ml-1 font-14"></i></a> </p>
+										</div>
+										<h1 class="mb-1 hidden">Temporarily rejected</h1>
+										<div class="hidden">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												We've reviewed your profile and currently Indiefolio doesn't have <br> opportunities for your area of expertise. If you have more relevant skills <br> or experience to add, you can update and re-submit your profile. 
+										   </p> 
+										   <p class="font-13 font-weight-500 text-dark-black mt-2 mb-2">
+											  You can resubmit anytime after <a href="#" class="text-primary font-13 font-weight-600 mr-3">19th June 2020<i class="fas fa-arrow-right ml-1 font-13"></i></a> 
+									   	  </p>
+										</div>  
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper hidden">
+					<div class="card user-height-section box-shadow-none border-0">
+						<div class="card-body">
+							<div class="row m-0 py-80 mob-p-0 ipad-p-0">
+								<div class="col-sm-12 position-relative mob-minus-82 ipad-minus-82">
+									<div class="user-application">
+										<img src="images/dashboard-reject.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1 profile-verified"></span>
+										<span class="timeline-item-dot-2 profile-verified"></span>
+										<span class="timeline-item-dot-3 temporarily active"></span>
+									</div> 
+								</div>
+								<div class="col-sm-12">
+									<div class="timeline-item active"> 
+										<h1 class="mb-1 active">Temporarily rejected</h1>
+										<div>
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												We've reviewed your profile and currently Indiefolio doesn't have opportunities for your area of expertise. If you have more relevant skills or experience to add, you can update and re-submit your profile. 
+										   </p> 
+										   <p class="re-submit font-13 font-weight-600 text-dark-black mb-2">
+											  You can resubmit anytime after <br><a href="#" class="text-primary font-13 font-weight-600 mr-3">19th June 2020<i class="fas fa-arrow-right ml-1 font-13"></i></a> 
+									   	  </p>
+										</div>  
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>     
+			</div>
+
+			<!-- Desktop Content -->
+			<div class="col-sm-9 col-md-9 col-lg-9 mob_display_none_off"> 
+				<div class="card-wrapper">
+					<div class="card user-height-section bg-shadow">
+						<div class="card-body">
+							<div class="row m-0 py-80">
+								<div class="col-sm-3 position-relatie">
+									<div class="user-application ipad-view ipad-minus-15 ipad-p-50">
+										<img src="images/dashboard-user.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1 active"></span>
+										<span class="timeline-item-dot-2"></span>
+										<span class="timeline-item-dot-3"></span>
+									</div> 
+								</div>
+								<div class="col-sm-9 ipad-pl-60 laptop-pl-60 ipad-pr-0 laptop-pr-0">
+									<div class="timeline-item active">
+										<h1 class="mb-1 active">Submit application</h1>
+										<div class="">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												Thanks for submitting your profile! As part of IFN's protocols, we vet every single <br> creator who joins our platform. You'll hear from us once your profile is reviewed. 
+										   </p>
+										   <button type="button" class="main-btn font-12 mob-w-100 mob-mt-10">Start application</button>
+										</div> 
+									</div> 
+									<div class="timeline-item">
+										<h1 class="mb-1">Profile under review</h1> 
+									</div>
+									<div class="timeline-item pb-0">
+										<h1 class="mb-1">Review complete</h1>  
+									</div> 
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper hidden">
+					<div class="card user-height-section bg-shadow">
+						<div class="card-body">
+							<div class="row m-0 py-80">
+								<div class="col-sm-3 position-relatie">
+									<div class="user-application ipad-minus-15">
+										<img src="images/dashboard-under-review.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1"></span>
+										<span class="timeline-item-dot-2 active"></span>
+										<span class="timeline-item-dot-3 profile-under-review"></span>
+									</div> 
+								</div>
+								<div class="col-sm-9 ipad-pl-60 laptop-pl-60">
+									<div class="timeline-item">
+										<h1 class="mb-1">Submit application</h1> 
+									</div>
+									<div class="timeline-item active ipad-pr-0">
+										<h1 class="mb-1 active">Profile under review</h1>
+										<div class="">
+											<p class="font-12 font-weight-500 text-secondary mb-2 ipad-font-11">
+												Thanks for submitting your profile! As part of IFN's protocols, we vet every single <br> creator who joins our platform. You'll hear from us once your profile is reviewed. 
+										   </p>
+										</div> 
+									</div>
+									<div class="timeline-item">
+										<h1 class="mb-1">Review complete</h1>  
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper hidden">
+					<div class="card user-height-section bg-shadow">
+						<div class="card-body">
+							<div class="row m-0 py-80">
+								<div class="col-sm-3 position-relatie">
+									<div class="user-application ipad-minus-15">
+										<img src="images/dashboard-verified.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1"></span>
+										<span class="timeline-item-dot-2 reveiw-complete"></span>
+										<span class="timeline-item-dot-3 active"></span>
+									</div> 
+								</div>
+								<div class="col-sm-9 ipad-pl-60 laptop-pl-60">
+									<div class="timeline-item">
+										<h1 class="mb-1">Submit application</h1> 
+									</div>
+									<div class="timeline-item">
+										<h1 class="mb-1">Profile under review</h1> 
+									</div>
+									<div class="timeline-item pb-0">
+										<h1 class="mb-1 active">Review complete</h1>
+										<div class=" ">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												Congratulations! Your profile is now verified. Welcome to Indiefolio's <br>
+												freelance network.  
+										   </p>
+										   <button type="button" class="main-btn font-12">Start application</button>
+										   <p class="font-12 font-weight-500 text-secondary mt-2 mb-0">
+											 Complete your profile and add other details to get suitable project <br> offers faster or go to <a href="#" class="text-primary font-12 font-weight-600 mr-3">Dashboard <i class="fas fa-arrow-right ml-1 font-12"></i></a> 
+									   	  </p>
+										</div>
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper hidden">
+					<div class="card user-height-section bg-shadow">
+						<div class="card-body">
+							<div class="row m-0 py-80">
+								<div class="col-sm-3 position-relatie">
+									<div class="user-application ipad-minus-15">
+										<img src="images/dashboard-reject.png" alt="dashboard" class="img-fluid">
+										<span class="timeline-item-dot-1"></span>
+										<span class="timeline-item-dot-2 reveiw-complete"></span>
+										<span class="timeline-item-dot-3 temporarily active"></span>
+									</div> 
+								</div>
+								<div class="col-sm-9 ipad-pl-60 laptop-pl-60">
+									<div class="timeline-item">
+										<h1 class="mb-1">Submit application</h1> 
+									</div>
+									<div class="timeline-item">
+										<h1 class="mb-1">Profile under review</h1> 
+									</div>
+									<div class="timeline-item active pb-0">
+										<h1 class="mb-1 active">Temporarily rejected</h1>
+										<div class="">
+											<p class="font-12 font-weight-500 text-secondary mb-2">
+												We've reviewed your profile and currently Indiefolio doesn't have <br> opportunities for your area of expertise. If you have more relevant skills <br> or experience to add, you can update and re-submit your profile. 
+										   </p> 
+										   <p class="font-13 font-weight-500 text-dark-black mt-2 mb-2">
+											  You can resubmit anytime after <a href="#" class="text-primary font-13 font-weight-600 mr-3">19th June 2020<i class="fas fa-arrow-right ml-1 font-13"></i></a> 
+									   	  </p>
+										</div> 
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>       
+			</div>
+		</div>
+
+		<!-- Desktop Content -->
+		<section class="mob_display_none_off">
+			<div class="row m-0">
+				<div class="col-sm-3">
+					<div class="dashboard-content"> 
+						<div class="dashboard-welcome px-3 py-5">
+							<h2 class="font-weight-600 font-22 ipad-font-14">Indiefolio is trusted by over 3k businesses in india.</h2>
+							<p class="sub-text font-14 font-weight-500 mb-0 ipad-font-13">Get access to 60k+ creators on Indiefolio.</p>
+						</div> 
+					</div> 
+				</div>
+				<div class="col-sm-9">
+					<p class="clients-logo text-center">
+						<img src="images/clients-logo.jpg" class="img-fluid">
+					</p>
+				</div>
+			</div>
+		</section> 
+	</div>
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

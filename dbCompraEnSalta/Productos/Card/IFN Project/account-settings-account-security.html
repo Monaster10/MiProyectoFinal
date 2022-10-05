@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indiefolio Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/dashboard-profile.css">
+	<link rel="stylesheet" href="css/theme-responsive.css">
+</head>
+<body>
+<section class="header_fixed"> 
+	<!-- Header Section -->
+	<section class="main-header bg-custom">
+		<div class="container-fluid main-header">
+			<nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+			<a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Indiefolio" title="Indiefolio"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav d-flex align-items-center"> 
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Messages</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Help & Support</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+				</li>
+				<li class="nav-item profile-header">
+					<a class="nav-link pr-4" href="#"><img src="images/profile.png" alt="profile" title=""></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main-btn pt-2 pb-2 text-white" href="#">Upload a project</a>
+				</li> 
+				</ul>
+			</div>
+			</nav>
+		</div> 
+	</section>
+	<!-- Mobile sub header -->
+	<div class="mobile-sub-header mobile-ipad-show">
+		<div class="row m-0 align-items-center"> 
+			<!-- Mobile Review Button -->
+			<div class="col-10 d-flex align-items-center pl-0">
+				<div class="mob_get_verify border-0">	
+					<h2><i class="fas fa-arrow-left mr-2"></i> Account & Security</h2>
+				</div> 
+			</div> 
+		</div> 
+	</div>
+</section>
+
+<!-- Footer Fixed Navigation -->
+<div class="mobile-footer-fixed">
+	<ul>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-align-left mr-1 footer_icon footer-icon-border"></i></span> Dashboard</a></li>
+		<li><a href="#" class="active"><span class="d-block text-center"><i class="fas fa-user mr-1 footer_icon footer-icon-border active"></i></span> Profile</a></li>
+		<li><a href="#"><span class="d-block text-center upload-btn-minus"><i class="fas fa-plus mr-1 footer_icon footer-icon-border mobile-upload"></i></span> Upload</a></li>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-cog mr-1 footer_icon extra-size"></i></span> Setting</a></li>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-comment mr-1 footer_icon extra-size"></i></span> Support</a></li>
+	</ul>
+</div> 
+
+<!-- Mobile Navigation vertical your account section -->
+<div class="card-wrapper mobile-ipad-show ipad-mb-15">
+	<div class="card mob-border-radius-0">
+		<div class="card-body">
+			<div class="p-border d-flex align-items-center flex-wrap">
+				<div>
+					<p class="ex-perience mob-m-0"><img src="images/account-manager.png" alt="profile" title=""></p>
+				</div>
+				<div class="pl-2">
+					<h2 class="profile_title d-block">Bojan Joncic</h2>
+					<span class="profile-subTitle d-block">Manage your account</span>
+				</div> 
+			</div> 
+			<div class="profile-list">
+				<ul> 
+					<li><a href="#" class="active-text-color"><i class="far fa-user-circle mr-1"></i> Profile <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+					<li><a href="#" class="active-text-color"><i class="far fa-id-badge mr-1"></i> Account & Security <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+					<li><a href="#" class="active-text-color"><i class="far fa-bell mr-1"></i> Notification Settings <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+					<li><a href="#" class="active-text-color"><i class="fas fa-receipt mr-1"></i> Billing Information <i class="fas fa-chevron-right float-right mt-1 text-secondary"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Navigation bottom image -->
+<div class="card-wrapper mobile-ipad-show">
+	<div class="card bg-success face-issue bg-image">
+		<div class="card-body"> 
+			<div class="profile-help pX_pY_30">
+				 <h2>Facing issues?</h2>
+				 <h3>We are help to help.</h3>
+				 <button type="button">Get started <i class="fas fa-arrow-right ml-1"></i></button> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="card-wrapper mobile-ipad-show ipad-p-15">
+	<div class="form-group text-right">
+		<input type="submit" class="logout main-btn w-100 mob-font-13" value="Logout">
+	</div> 
+</div>
+
+
+<!-- Main Content Section-->
+<section>
+	<div class="container profile-content mob-p-0 ipad-w-100 ipad-pt-10 pb-0">
+		<div class="row mob-m-0 ipad-m-0">
+			<div class="col-sm-4 col-md-4 col-lg-4 pl-0 mob-pr-0 profile-inner">
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card">
+						<div class="card-body">
+							<div class="p-border">
+								<p class="profile_img mb-2"><img src="images/account-manager.png" alt="profile" title=""></p>
+								<h2 class="profile_title">Bojan Joncic</h2>
+								<span class="profile-subTitle">Manage your account</span>
+							</div> 
+							<div class="profile-list">
+								<ul>
+									<li><a href="#">Profile</a></li>
+									<li><a href="#" class="active-text-color">Account & Security</a></li>
+									<li><a href="#">Notification Settings</a></li>
+									<li><a href="#">Billing Information</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>  
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card bg-success bg-image">
+						<div class="card-body"> 
+							<div class="profile-help pX_pY_30">
+								 <h2>Facing issues?</h2>
+								 <h3>We are help to help.</h3>
+								 <button type="button">Get started <i class="fas fa-arrow-right ml-1"></i></button> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Creator section -->
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card bg-success bg-image bg-image-creator">
+						<div class="card-body"> 
+							<div class="profile-help pX_pY_30">
+								 <h2>Facing issues?</h2>
+								 <h3>We are help to help.</h3> 
+							</div>
+						</div>
+					</div>
+				</div>  
+			</div>
+			<div class="col-sm-8 col-md-8 col-lg-8 pr-0 profile-inner mob-p-0 ipad-w-100 ipad-only-p-0">
+				<!-- <div class="card-wrapper">
+					<div class="account-setting px-2">
+						<h2 class="dflex">CHANGE YOUR PASSWORD <span class="underline"></span></h2>
+						<div class="custom_form">
+							<form class="pt-3" method="post" action="">
+								<div class="form-group">
+								  <label class="label" for="currentPassword">Current password</label>
+								  <input type="text" class="form-control form-input" placeholder="Enter details here">
+								</div>
+								<div class="form-group">
+								  <label class="label" for="newPassword">New password</label>
+								  <input type="text" class="form-control form-input" placeholder="Enter details here">
+								</div>
+								<div class="form-group sub_dflex">
+									<span class="sub_title">8 characters</span>
+									<span class="sub_title px-4">1 uppercase</span>
+									<span class="sub_title">1 lowercase</span>
+								</div>
+								<div class="form-group">
+									<label class="label" for="confirmNewPassword">Confirm new password</label>
+									<input type="text" class="form-control form-input" placeholder="Enter details here">
+								</div>
+								<div class="form-group pt-3">
+									<button type="button" class="main-btn">Update password</button>
+								</div>
+							</form>
+						</div> 
+					</div> 
+				</div> -->
+				<div class="card-wrapper px-2 mob-p-0 mob-mb-10 mob-mt-10 ipad-only-p-0 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2 class="text-uppercase">change your password</h2>
+							</div> 
+							<div class="custom_form py-3 px-4">
+								<form method="post" action="">
+									<div class="row m-0">
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label" for="first">Current password</label>
+											<input type="password" class="form-control email" placeholder="Enter details here"> 
+										</div> 
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label" for="last">New password</label>
+											<input type="password" class="form-control email" placeholder="Enter details here">
+											<div class="form-group sub_dflex mb-0 mt-2 font-weight-500">
+												<span class="sub_title">8 characters</span>
+												<span class="sub_title px-4">1 uppercase</span>
+												<span class="sub_title">1 lowercase</span>
+											</div>
+										</div>
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label" for="last">Confirm new password</label>
+											<input type="password" class="form-control email" placeholder="Enter details here">
+										</div>  
+									</div>  
+									<div class="form-group text-right">
+										<input type="submit" class="main-btn mob-w-100 mob-font-13 disabled" value="Update password">
+									</div>  
+								</form>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<!-- Switch toggle button -->
+				<div class="card-wrapper mob-mb-10 ipad-mb-15">
+					<div class="account-setting px-2 pt-4 mob-p-0 ipad-only-p-0">
+						<h2 class="dflex ipad-only-p-15">ACCOUNT TYPE <span class="underline_1"></span></h2>
+						<div class="card mt-4 bg-shadow mob-border-radius-0 mob-mt-10 ipad-mt-10">
+							<div class="card-body">
+								<div class="row m-0">
+									<div class="col-sm-4">
+										<div class="account-client"></div>
+									</div>
+									<div class="col-sm-4 switch dflex">
+										<div class="w-100 dflex pt-4 mob-w-75 m-auto">
+											<div class="client">CLIENT</div>
+											<div class="form-group switch-div">  
+												<input type="checkbox" id="switch" checked/>
+												<label for="switch">Toggle</label>
+											</div>
+											<div class="creator">CREATOR</div>
+										</div> 
+									</div>
+									<div class="col-sm-4">
+										<div class="account-creator"></div>
+									</div>
+								</div>
+							</div> 
+						</div> 
+					</div> 
+				</div>
+				<!-- creator section -->
+				<div class="card-wrapper px-2 mob-p-0 mob-mb-10 ipad-only-p-0 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2 class="text-uppercase">account</h2>
+							</div> 
+							<div class="custom_form py-3 px-4">
+								<form method="post" action="">
+									<div class="row m-0">
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="first">Username</label>
+											<input type="text" class="form-control email" placeholder="bojan.joncic94">
+										</div> 
+										<div class="form-group mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label" for="last">Last name</label>
+											<input type="text" class="form-control email" placeholder="Khurana">
+										</div>
+										<div class="form-group position-relative mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="primary">No. of employees</label>
+											<div class="filter-dropdown">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Select</option>
+														<option value="january" rel="icon-temperature">Male</option>
+														<option value="february">Female</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow"></i>
+											</div>
+										</div>
+										<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label" for="primary">Primary Email ID</label>
+											<input type="email" class="form-control email" placeholder="vijay@grappus.com">
+											<span class="verified"><i class="fas fa-check-circle"></i> Verified</span>
+										</div>   
+										<div class="form-group position-relative mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="primary">Secondary Email ID</label>
+											<input type="email" class="form-control email" placeholder="vijay@grappus.com">
+											<span class="verified"><i class="fas fa-check-circle"></i> Verified</span>
+										</div>  
+										<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0 account-setting-dropdown">
+											<label class="label" for="primary">Phone Number</label>
+											<input type="number" class="form-control email pl-extra" placeholder="Mobile number">
+											<span class="verified-again"><i class="fas fa-exclamation-triangle"></i> Verify now <i class="fas fa-arrow-right"></i></span>
+											<span class="select-class getSelect">
+												<span style="display:block;"> +91 </span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+											</span>
+											<div class="country_dropdown">
+												<ul class="allcountries">
+													<li>+91</li>
+													<li>+1</li>
+													<li>+2</li>
+													<li>+3</li>
+													<li>+4</li>
+													<li>+5</li>
+													<li>+6</li>
+													<li>+7</li>
+													<li>+8</li>
+													<li>+9</li>
+													<li>+10</li>
+												</ul>
+											</div>
+										</div>
+									</div>  
+									<div class="form-group text-right">
+										<input type="submit" class="main-btn mob-w-100 mob-font-13" value="Save profile">
+									</div>  
+								</form>
+							</div> 
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper px-2 mob-p-0 mob-mb-10 ipad-only-p-0 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2 class="text-uppercase">visibility</h2>
+							</div> 
+							<div class="custom_form">
+								<form method="post" action="">
+									<div class="account-email-alert px-4 pt-4">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-6">
+												<label class="label m-0 text-black" for="projectRequests">Profile</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-6 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="" rel="icon-temperature">Enable</option>
+															<option value="">Public</option>
+															<option value="">Only FMS Users</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-6">
+												<label class="label m-0 text-black" for="newMessages">Pricing & Earning</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-6 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="" rel="icon-temperature">Enable</option>
+															<option value="">Public</option>
+															<option value="">Only FMS Users</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div> 
+									<div class="account-email-alert px-4 pt-4">
+										<div class="row m-0 align-items-center"> 
+											<div class="form-group position-relative mb-4 pl-0 col-6 col-sm-6">
+												<label class="label m-0 text-black" for="paymentReminders">Search Engine</label>
+											</div>  
+											<div class="form-group position-relative mb-4 col-6 col-sm-6 px-0 account-notification">
+												<div class="filter-dropdown d-flex align-items-center justify-content-end">
+													<div class="select">
+														<select id="mounth"> 
+															<option value="" rel="icon-temperature">Enable</option>
+															<option value="">Public</option>
+															<option value="">Only FMS Users</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div> 
+										</div>
+									</div>   
+								</form>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper px-2 mob-p-0 mob-mb-10 ipad-only-p-0 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline">
+								<h2 class="text-uppercase">change your password</h2>
+							</div> 
+							<div class="custom_form py-3 px-4">
+								<form method="post" action="">
+									<div class="row m-0">
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label" for="first">Current password</label>
+											<input type="password" class="form-control email" placeholder="Enter details here">
+											<span class="sub_title mt-2 d-block text-primary font-weight-600">Forgot Password <i class="fas fa-arrow-right ml-1"></i></span>
+										</div> 
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label" for="last">New password</label>
+											<input type="password" class="form-control email" placeholder="Enter details here">
+											<span class="sub_title mt-2 d-block">Use atleast 8 characters with a combination of letters, numbers and symbols. Don't use personal information or common words.</span>
+										</div>
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label" for="last">Confirm new password</label>
+											<input type="password" class="form-control email" placeholder="Enter details here">
+										</div>  
+									</div>  
+									<div class="form-group text-right">
+										<input type="submit" class="main-btn disabled mob-w-100 mob-font-13" value="Change password">
+									</div>  
+								</form>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<!-- <div class="card-wrapper">
+					<div class="account-setting px-2 pt-3">
+						<h2 class="dflex"><span class="underline_2"></span></h2>
+						<div class="dflex pt-2">
+							<div class="">
+								<h2>Close Account</h2>
+								<span class="profile-subTitle">Delete your account and account data</span>
+							</div>
+							<div class="">
+								<button type="button" class="main-btn bg-danger" data-toggle="modal" data-target="#DeactivateAccountModal">Deactivate Account</button>
+							</div> 
+						</div> 
+					</div> 
+				</div>      -->
+				<div class="card-wrapper px-2 mob-p-0 ipad-only-p-0 ipad-only-mb-90 mob-mb-90">
+					<div class="card mob-border-radius-0">
+						<div class="card-body">
+							<div class="account-setting p-4"> 
+								<div class="dflex flex-wrap">
+									<div class="">
+										<h2>Close Account</h2>
+										<span class="profile-subTitle">Delete your account and account data</span>
+									</div>
+									<div class="mob-mt-10">
+										<button type="button" class="main-btn bg-danger mob-font-12" data-toggle="modal" data-target="#DeactivateAccountModal">Deactivate Account</button>
+									</div> 
+								</div> 
+							</div>
+						</div>
+					</div> 
+				</div> 
+			</div>
+		</div>
+		<!--Footer bar Menu-->
+		<!-- <div class="mobile-footer-fixed">
+			<ul>
+				<li><a href="#"><span class="d-block text-center"><i class="fas fa-align-left mr-1 footer_icon footer-icon-border"></i></span> Dashboard</a></li>
+				<li><a href="#" class="active"><span class="d-block text-center"><i class="fas fa-user mr-1 footer_icon footer-icon-border active"></i></span> Profile</a></li>
+				<li><a href="#"><span class="d-block text-center upload-btn-minus"><i class="fas fa-plus mr-1 footer_icon footer-icon-border mobile-upload"></i></span> Upload</a></li>
+				<li><a href="#"><span class="d-block text-center"><i class="fas fa-cog mr-1 footer_icon extra-size"></i></span> Setting</a></li>
+				<li><a href="#"><span class="d-block text-center"><i class="fas fa-comment mr-1 footer_icon extra-size"></i></span> Support</a></li>
+			</ul>
+		</div>  -->
+	</div>
+</section>
+
+<!-- Deactivate Account Modal -->
+<div class="modal fade custom_form verify_modal custom_Modal_Box" id="DeactivateAccountModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0">
+				<div class="col-sm-12 remove-pd">
+					<div class="account-deactivated d-flex align-items-center justify-content-center">
+						<h2>We're sorry to see you go</h2>
+					</div>
+				</div>
+				<div class="col-sm-12 p-0 mobile-show"> 
+					<h2 class="font-16 py-3 px-4 mb-0 bg-shadow font-weight-600">We're sorry to see you go</h2> 
+				</div>
+				<div class="col-sm-12 overflow-content">
+					<div class="login text-center mob-text-left mob-p-15 pt-2 pb-5">
+						<p class="px-4 mb-4 mob-p-0">If you'd like to reduce your email notifications, you can <a href="#">disable them here</a> or if you just want to change your username, you can <a href="#">do that here.</a> Be advised, account deletion is final. There will be no way to restore your account.</p> 
+						<button type="button" class="main-btn mob-w-100 mob-mb-15">Never mind</button>
+						<button type="button" class="main-btn mob-w-100 mob-m-0 bg-light ml-3">Delete my account</button> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	  </div>
+	</div>
+</div>
+   
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

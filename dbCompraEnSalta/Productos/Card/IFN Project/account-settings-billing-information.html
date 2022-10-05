@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indiefolio Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/dashboard-profile.css">
+	<link rel="stylesheet" href="css/theme-responsive.css">
+</head>
+<body>
+<section class="header_fixed"> 
+	<!-- Header Section -->
+	<section class="main-header bg-custom">
+		<div class="container-fluid main-header">
+			<nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+			<a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Indiefolio" title="Indiefolio"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav d-flex align-items-center"> 
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Messages</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Help & Support</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+				</li>
+				<li class="nav-item profile-header">
+					<a class="nav-link pr-4" href="#"><img src="images/profile.png" alt="profile" title=""></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link main-btn pt-2 pb-2 text-white" href="#">Upload a project</a>
+				</li> 
+				</ul>
+			</div>
+			</nav>
+		</div> 
+	</section>
+
+	<!-- Mobile sub header -->
+	<div class="mobile-sub-header mobile-ipad-show">
+		<div class="row m-0 align-items-center"> 
+			<!-- Mobile Review Button -->
+			<div class="col-10 d-flex align-items-center pl-0">
+				<div class="mob_get_verify border-0">	
+					<h2><i class="fas fa-arrow-left mr-2"></i> Notification Settings</h2>
+				</div> 
+			</div> 
+		</div> 
+	</div>
+</section>
+
+<!-- Footer Fixed Navigation -->
+<div class="mobile-footer-fixed">
+	<ul>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-align-left mr-1 footer_icon footer-icon-border"></i></span> Dashboard</a></li>
+		<li><a href="#" class="active"><span class="d-block text-center"><i class="fas fa-user mr-1 footer_icon footer-icon-border active"></i></span> Profile</a></li>
+		<li><a href="#"><span class="d-block text-center upload-btn-minus"><i class="fas fa-plus mr-1 footer_icon footer-icon-border mobile-upload"></i></span> Upload</a></li>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-cog mr-1 footer_icon extra-size"></i></span> Setting</a></li>
+		<li><a href="#"><span class="d-block text-center"><i class="fas fa-comment mr-1 footer_icon extra-size"></i></span> Support</a></li>
+	</ul>
+</div>  
+
+
+<!-- Main Content Section-->
+<section>
+	<div class="container profile-content mob-p-0 ipad-w-100 ipad-pt-10 pb-0">
+		<div class="row mob-m-0 ipad-m-0">
+			<div class="col-sm-4 col-md-4 col-lg-4 pl-0 profile-inner">
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card">
+						<div class="card-body">
+							<div class="p-border">
+								<p class="profile_img mb-2"><img src="images/account-manager.png" alt="profile" title=""></p>
+								<h2 class="profile_title">Bojan Joncic</h2>
+								<span class="profile-subTitle">Manage your account</span>
+							</div> 
+							<div class="profile-list">
+								<ul>
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Account & Security</a></li>
+									<li><a href="#">Notification Settings</a></li>
+									<li><a href="#" class="active-text-color">Billing Information</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card bg-success bg-image">
+						<div class="card-body"> 
+							<div class="profile-help pX_pY_30">
+								 <h2>Facing issues?</h2>
+								 <h3>We are help to help.</h3>
+								 <button type="button">Get started <i class="fas fa-arrow-right ml-1"></i></button> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Creator section -->
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="card bg-success bg-image bg-image-creator">
+						<div class="card-body"> 
+							<div class="profile-help pX_pY_30">
+								 <h2>Facing issues?</h2>
+								 <h3>We are help to help.</h3> 
+							</div>
+						</div>
+					</div>
+				</div>  
+			</div>
+			<div class="col-sm-8 col-md-8 col-lg-8 pr-0 profile-inner mob-p-0 ipad-w-100 ipad-only-p-0"> 
+				<!-- Mobile Content Payment Method -->
+				<div class="card-wrapper mob-mb-10 ipad-mb-15 mobile-ipad-show">
+					<div class="card mob-border-radius-0">
+						<div class="card-body">
+							<div class="profile-headline">
+								<h2 class="mb-1 font-weight-600">PAYMENT METHODS</h2> 
+							</div>
+							<div class="custom_form">
+								<div class="row m-0 py-3 align-items-center bor-bottom">
+									<div class="col-12">
+										<div class="dflex justify-content-unset"> 
+											<label class="label m-0 text-black pt-1" for="HDFC">HDFC card <span class="text-secondary font-12">ending in 1234</span></label>
+											<span class="ml-1"><img src="images/visa.png" alt="Visa" title="Visa" width="30"></span>
+										</div> 
+									</div>
+									<div class="col-12">
+										<label class="label m-0 text-black pt-1" for="saha">Mrinalini Saha</label>
+									</div>
+									<div class="col-12">
+										<label class="label m-0 text-black pt-1" for="date">11/2020</label>
+									</div>
+									<div class="col-12 pt-3">
+										<div class="row">
+											<div class="col-6 pr-0">
+												<div class="tags text-center font-14">Edit</div>
+											</div>
+											<div class="col-6 pl-0">
+												<div class="tags text-center font-14">Delete</div>
+											</div> 
+										</div>
+									</div> 
+								</div>
+								<div class="row m-0 py-3 align-items-center bor-bottom">
+									<div class="col-12">
+										<div class="dflex justify-content-unset"> 
+											<label class="label m-0 text-black pt-1" for="HDFC">HDFC card <span class="text-secondary font-12">ending in 1234</span></label>
+											<span class="ml-1"><img src="images/visa.png" alt="Visa" title="Visa" width="30"></span>
+										</div> 
+									</div>
+									<div class="col-12">
+										<label class="label m-0 text-black pt-1" for="saha">Mrinalini Saha</label>
+									</div>
+									<div class="col-12">
+										<label class="label m-0 text-black pt-1" for="date">11/2020</label>
+									</div>
+									<div class="col-12 pt-3">
+										<div class="row">
+											<div class="col-6 pr-0">
+												<div class="tags text-center font-14">Edit</div>
+											</div>
+											<div class="col-6 pl-0">
+												<div class="tags text-center font-14">Delete</div>
+											</div> 
+										</div>
+									</div> 
+								</div>
+								<div class="row m-0">
+									<div class="col-12">
+										<button type="button" class="main-btn w-100 my-4" data-toggle="modal" data-target="#addNewCardModal"><i class="fas fa-plus"></i> Add new card</button> 
+									</div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+
+				<!-- Desktop Content Payment Method -->
+				<div class="card-wrapper mobile-ipad-none">
+					<div class="account-setting px-2">
+						<h2 class="pb-3 dflex">PAYMENT METHODS <span class="underline_3"></span></h2>
+						<div class="custom_form pb-2">
+							<div class="row m-0">
+								<div class="col-sm-4 pl-0">
+									<label class="label" for="savedCards">Saved Cards</label>
+								</div>
+								<div class="col-sm-4">
+									<label class="label" for="nameOnCard">Name on card</label>
+								</div>
+								<div class="col-sm-4">
+									<label class="label" for="expiry">Expiry</label>
+								</div>
+							</div>
+						</div>
+						<div class="card-details">
+							<div class="card">
+								<div class="card-body">
+									<div class="custom_form">
+										<div class="row m-0 py-3 align-items-center">
+											<div class="col-sm-4">
+												<div class="dflex justify-content-unset"> 
+													<label class="label m-0 text-black pt-1" for="HDFC">HDFC card <span class="text-secondary font-12">ending in 1234</span></label>
+													<span class="ml-1"><img src="images/visa.png" alt="Visa" title="Visa" width="30"></span>
+												</div> 
+											</div>
+											<div class="col-sm-4">
+												<label class="label m-0 text-black pt-1" for="saha">Mrinalini Saha</label>
+											</div>
+											<div class="col-sm-2">
+												<label class="label m-0 text-black pt-1" for="date">11/2020</label>
+											</div>
+											<div class="col-sm-2">
+												<span class="option d-block pt-1">
+													<i class="fas fa-pencil-alt px-4 laptop-px-10"></i>
+													<i class="fas fa-trash"></i>
+												</span>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="card-details">
+							<div class="card">
+								<div class="card-body">
+									<div class="custom_form">
+										<div class="row m-0 py-3 align-items-center">
+											<div class="col-sm-4">
+												<div class="dflex justify-content-unset"> 
+													<label class="label m-0 text-black pt-1" for="HDFC">BOB card <span class="text-secondary font-12">ending in 1234</span></label>
+													<span class="ml-1"><img src="images/master-card.png" alt="Master-card" title="Master-card" width="30"></span>
+												</div> 
+											</div>
+											<div class="col-sm-4">
+												<label class="label m-0 text-black pt-1" for="Karthik">Karthik Thata</label>
+											</div>
+											<div class="col-sm-2">
+												<label class="label m-0 text-black pt-1" for="date">11/2020</label>
+											</div>
+											<div class="col-sm-2">
+												<span class="option d-block pt-1">
+													<i class="fas fa-pencil-alt px-4 laptop-px-10"></i>
+													<i class="fas fa-trash"></i>
+												</span>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="card-details">
+							<div class="card">
+								<div class="card-body">
+									<div class="custom_form">
+										<div class="row m-0 py-3 align-items-center">
+											<div class="col-sm-4">
+												<div class="dflex justify-content-unset"> 
+													<label class="label m-0 text-black pt-1" for="HDFC">HDFC card <span class="text-secondary font-12">ending in 1234</span></label>
+													<span class="ml-1"><img src="images/visa.png" alt="Visa" title="Visa" width="30"></span>
+												</div> 
+											</div>
+											<div class="col-sm-4">
+												<label class="label m-0 text-black pt-1" for="saha">Mrinalini Saha</label>
+											</div>
+											<div class="col-sm-2">
+												<label class="label m-0 text-black pt-1" for="date">11/2020</label>
+											</div>
+											<div class="col-sm-2">
+												<span class="option d-block pt-1">
+													<i class="fas fa-pencil-alt px-4 laptop-px-10"></i>
+													<i class="fas fa-trash"></i>
+												</span>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="card-details">
+							<div class="card">
+								<div class="card-body">
+									<div class="custom_form">
+										<div class="row m-0 py-3 align-items-center">
+											<div class="col-sm-4">
+												<div class="dflex justify-content-unset"> 
+													<label class="label m-0 text-black pt-1" for="HDFC">BOB card <span class="text-secondary font-12">ending in 1234</span></label>
+													<span class="ml-1"><img src="images/master-card.png" alt="Master-card" title="Master-card" width="30"></span>
+												</div> 
+											</div>
+											<div class="col-sm-4">
+												<label class="label m-0 text-black pt-1" for="Karthik">Karthik Thata</label>
+											</div>
+											<div class="col-sm-2">
+												<label class="label m-0 text-black pt-1" for="date">11/2020</label>
+											</div>
+											<div class="col-sm-2">
+												<span class="option d-block pt-1">
+													<i class="fas fa-pencil-alt px-4 laptop-px-10"></i>
+													<i class="fas fa-trash"></i>
+												</span>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+						</div>
+						<button type="button" class="main-btn mt-2 mb-4" data-toggle="modal" data-target="#addNewCardModal"><i class="fas fa-plus"></i> Add new card</button>  
+					</div> 
+				</div>
+				<div class="card-wrapper">
+					<div class="account-setting px-2 mob-p-0 ipad-only-p-0">
+						<h2 class="pb-3 dflex mob-p-15 ipad-p-15">INVOICES <span class="underline_4"></span> <a href="#" class="font-12 text-center">Download all <i class="fas fa-arrow-right ml-1"></i></a></h2> 
+						<div class="card-details mob-mb-10 ipad-mb-15">
+							<div class="card p-4 mob-border-radius-0 mob-p-15">
+								<div class="card-body">
+									<div class="custom_form">
+										<div class="dflex pt-2 mb-3">
+											<div class="">
+												<h2 class="mob-font-13 mob-m-0 mob-font-12 small-font-11">Milkinside Rebranding <i class="fas fa-exclamation-triangle ml-1 text-danger font-12 small-font-10"></i></h2>
+												<span class="profile-subTitle text-uppercase mob-font-11">Logo DESIGN</span>
+											</div>
+											<div class="dropdown_btn">
+												<button type="button" class="main-btn mob-font-12 small-font-10" data-toggle="modal" data-target="#DeactivateAccountModal">Make payment</button>
+												<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fas fa-ellipsis-h dropdown_icon mob-font-12 small-font-10"></i>
+												</span>
+												<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+													<span class="dropdown-menu-arrow"></span>
+													<a class="dropdown-item" href="#">Edit	invoice</a>
+													<a class="dropdown-item" href="#">Download PDF</a> 
+												</div>
+											</div> 
+										</div>
+										<div class="row m-0">
+											<div class="col-6 col-sm-3 pl-0">
+												<span class="profile-subTitle text-uppercase font-11">Invoice No.</span>
+												<label class="label m-0 text-black d-block mob-font-12" for="projectRequests">54504</label>
+											</div>
+											<div class="col-6 col-sm-3">
+												<span class="profile-subTitle text-uppercase font-11">Amount</span>
+												<label class="label m-0 text-black d-block mob-font-12" for="projectRequests"><i class="fas fa-rupee-sign"></i> 20,000</label>
+											</div>
+											<div class="col-6 col-sm-3 mob-pl-0 mob-mt-10">
+												<span class="profile-subTitle text-uppercase font-11">Due date</span>
+												<label class="label m-0 text-black d-block mob-font-12" for="projectRequests">28 Sep 2019</label>
+											</div>
+											<div class="col-6 col-sm-3 mob-mt-10">
+												<span class="profile-subTitle text-uppercase font-11">Creator</span>
+												<label class="label m-0 text-black d-block review mob-font-12" for="projectRequests"><img src="images/account-manager.png" width="22" alt="creator"> Karan Chowdhary</label>
+											</div>
+										</div>  
+									</div> 
+								</div>
+							</div>
+						</div>
+						<div class="card-details mob-mb-10 ipad-mb-15">
+							<div class="card p-4 mob-border-radius-0 mob-p-15">
+								<div class="card-body">
+									<div class="custom_form">
+										<div class="dflex pt-2 mb-3">
+											<div class="">
+												<h2 class="mob-m-0 mob-font-12 small-font-11">Opeth album</h2>
+												<span class="profile-subTitle text-uppercase mob-font-11 small-font-10">graphic designer</span>
+											</div>
+											<div class="dropdown_btn">
+												<span class="text-secondary mob-font-12 small-font-10"><i class="fas fa-rupee-sign mr-1 indian-rup mob-font-12 "></i> Payment completed</span>
+												<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fas fa-ellipsis-h dropdown_icon mob-font-12 small-font-10"></i>
+												</span>
+												<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+													<span class="dropdown-menu-arrow"></span>
+													<a class="dropdown-item" href="#">Edit	invoice</a>
+													<a class="dropdown-item" href="#">Download PDF</a> 
+												</div>
+											</div> 
+										</div>
+										<div class="row m-0">
+											<div class="col-6 col-sm-3 pl-0">
+												<span class="profile-subTitle text-uppercase font-11">Invoice No.</span>
+												<label class="label m-0 text-black d-block mob-font-12" for="projectRequests">54504</label>
+											</div>
+											<div class="col-6 col-sm-3">
+												<span class="profile-subTitle text-uppercase font-11">Amount</span>
+												<label class="label m-0 text-black d-block mob-font-12" for="projectRequests"><i class="fas fa-rupee-sign"></i> 20,000</label>
+											</div>
+											<div class="col-6 col-sm-3 mob-pl-0 mob-mt-10">
+												<span class="profile-subTitle text-uppercase font-11">Due date</span>
+												<label class="label m-0 text-black d-block mob-font-12" for="projectRequests">28 Sep 2019</label>
+											</div>
+											<div class="col-6 col-sm-3 mob-mt-10">
+												<span class="profile-subTitle text-uppercase font-11">Creator</span>
+												<label class="label m-0 text-black d-block review mob-font-12" for="projectRequests"><img src="images/account-manager.png" width="22" alt="creator"> Karan Chowdhary</label>
+											</div>
+										</div>  
+									</div> 
+								</div>
+							</div>
+						</div>     
+					</div> 
+				</div>
+				<!-- creator section -->
+				<div class="card-wrapper mb-3 px-2 mob-p-0 mob-mb-10 ipad-mb-15 ipad-only-p-0">
+					<div class="row m-0">
+						<div class="col-sm-12 tax-account mob-border-radius-0 mob-minus-mb-20">
+							<div class="py-5 px-4 mob-only-p-30">
+								<span class="text-uppercase font-12 sub_title font-weight-600">My earnings</span>
+								<h2 class="text-uppercase m-0"><i class="fas fa-rupee-sign mr-1"></i> 10,000</h2>
+								<span class="sub_title d-block text-info font-weight-600">Withdraw <i class="fas fa-arrow-right ml-1"></i></span> 
+							</div> 
+						</div> 
+					</div> 
+				</div> 
+				<div class="card-wrapper px-2 mob-mb-10 ipad-mb-15 mob-p-0 ipad-only-p-0">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline dflex py-2">
+								<h2 class="text-uppercase">Payout settings</h2>
+								<span class="creator-tax" id=""><i class="fas fa-chevron-down tax-icon"></i></span>
+							</div> 
+							<div class="custom_form py-3 px-4 mob-p-15 hidden">
+								<form method="post" action="">
+									<div class="row m-0">
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="first">pan number</label>
+											<input type="text" class="form-control email" placeholder="BHFG2423K">
+										</div> 
+										<div class="form-group w-100 mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label" for="last">gstin <span>(if application)</span></label>
+											<input type="text" class="form-control email" placeholder="09124071284">
+										</div>
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="first">Address</label>
+											<input type="text" class="form-control email" placeholder="Address comes here">
+										</div> 
+										<div class="form-group w-100 mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label" for="last">Legal name</label>
+											<input type="text" class="form-control email" placeholder="Legal name here">
+										</div> 
+									</div>  
+								</form>
+							</div> 
+						</div>
+					</div>
+				</div>  
+				<div class="card-wrapper px-2 mob-mb-10 ipad-mb-15 mob-p-0 ipad-only-p-0">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline dflex py-2">
+								<h2 class="text-uppercase">tax settings</h2>
+								<span class="creator-tax" id="tax-settings"><i class="fas fa-chevron-down tax-icon active"></i></span>
+							</div> 
+							<div class="custom_form py-3 px-4 tax-settings mob-p-15">
+								<form method="post" action="">
+									<div class="row m-0">
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="first">pan number</label>
+											<input type="text" class="form-control email" placeholder="BHFG2423K">
+										</div> 
+										<div class="form-group w-100 mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label" for="last">gstin <span>(if application)</span></label>
+											<input type="text" class="form-control email" placeholder="09124071284">
+										</div>
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label" for="first">Address</label>
+											<input type="text" class="form-control email" placeholder="Address comes here">
+										</div> 
+										<div class="form-group w-100 mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label" for="last">Legal name</label>
+											<input type="text" class="form-control email" placeholder="Legal name here">
+										</div> 
+									</div>  
+								</form>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper px-2 mob-p-0 ipad-only-p-0 ipad-only-mb-90 mob-mb-90">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline dflex py-2">
+								<h2 class="text-uppercase">transactions</h2>
+								<span class="creator-tax" id="tax-settings"><span class="text-primary font-12 small-font-11 small-m-0 font-weight-600 mr-3"><i class="fas fa-receipt mr-1"></i> Export transactions</span> <i class="fas fa-chevron-down tax-icon active"></i></span>
+							</div>
+							<div class="row m-0 bor-bottom">
+								<div class="col-sm-12">
+									<span class="sub_title d-block font-weight-600 font-12 text-uppercase py-12 px-2">15 jan 2020</span> 
+								</div>
+							</div> 
+							<div class="custom_form py-2 px-4 account-setting bor-bottom">
+								<div class="pt-2">
+									<div class="row m-0 align-items-center">
+										<div class="col-10 col-sm-10 d-flex align-items-center pl-0">
+											<div class="">
+												<p class="mb-2 re-view"><img src="images/account-manager.png" alt="profile" title="" width="35"></p>
+											</div>
+											<div class="pl-3 wallet">
+												<h2 class="text-capitalize m-0 font-14 mob-font-12 small-font-10">Added to wallet form Anuj Birla</h2>
+												<span class="profile-subTitle font-11 text-capitalize mob-font-11 small-font-8">Paid for Milestone 3 of Grappus branding</span>
+											</div>
+										</div>
+										<div class="col-2 col-sm-2 pr-0 mob-p-0">
+											<div class="text-right">
+												<h2 class="text-uppercase m-0 text-success font-14 mob-font-10 small-font-8"><i class="fas fa-plus mr-1 mob-font-10 font-12 text-success mob-font-10"></i> <i class="fas fa-rupee-sign font-12 mob-font-10 text-success"></i> 7,000</h2>
+											</div> 
+										</div>
+									</div> 
+								</div> 
+							</div>
+							<div class="custom_form py-2 px-4 account-setting bor-bottom">
+								<div class="pt-2">
+									<div class="row m-0 align-items-center">
+										<div class="col-10 col-sm-10 d-flex align-items-center pl-0">
+											<div class="">
+												<p class="mb-2 re-view"><img src="images/account-manager.png" alt="profile" title="" width="35"></p>
+											</div>
+											<div class="pl-3 wallet">
+												<h2 class="text-capitalize m-0 font-14 mob-font-12 small-font-10">Added to wallet form Anuj Birla</h2>
+												<span class="profile-subTitle font-11 text-capitalize mob-font-11 small-font-8">Paid for Milestone 3 of Grappus branding</span>
+											</div>
+										</div>
+										<div class="col-2 col-sm-2 pr-0 mob-p-0">
+											<div class="text-right">
+												<h2 class="text-uppercase m-0 text-success font-14 mob-font-10 small-font-8"><i class="fas fa-plus mr-1 mob-font-10 font-12 text-success mob-font-10"></i> <i class="fas fa-rupee-sign font-12 mob-font-10 text-success"></i> 7,000</h2>
+											</div> 
+										</div>
+									</div> 
+								</div> 
+							</div>
+							<div class="text-center">
+								<p class="mt-12 view-more"><span class="font-12 text-primary font-weight-600 p-1 bg-white" id=""><i class="fas fa-chevron-down"></i> View more</span></p>
+							</div>  
+						</div>
+					</div>
+				</div>      
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Add new card Account Modal -->
+<div class="modal fade custom_form verify_modal custom_Modal_Box" id="addNewCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>  
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0">
+				<div class="col-sm-12 p-0">
+					<div class="account-deactivated d-flex align-items-center justify-content-center">
+						<h2>Add a new card</h2>
+					</div>
+				</div>
+				<div class="login pt-4 px-5 mob-p-15"> 
+      				<form action="" method="post"> 
+						<div class="form-group mb-3 position-relative">
+							<input type="number" class="form-control email" placeholder="Card number">
+							<span class="ml-1 addCardImage"><img src="images/visa.png" alt="Visa" title="Visa" width="30"></span>
+							<span class="ml-1 addCardImage"><img src="images/master-card.png" alt="Master-card" title="Master-card" width="30"></span>
+						</div>
+						<div class="form-group mb-3">
+							<input type="password" class="form-control email" placeholder="Name on card">
+						</div>
+						<div class="form-group dflex mb-4">
+							<input type="number" class="form-control email mr-2 w-48" placeholder="CVV">
+							<input type="text" class="form-control email w-48" placeholder="Expiry">
+						</div>   
+					    <div class="form-group"> 
+      						<button type="button" class="main-btn w-100 py-12">Add card</button> 
+      					</div> 
+      				</form>
+      			</div> 
+			</div> 
+		</div> 
+	  </div>
+	</div>
+</div>
+   
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

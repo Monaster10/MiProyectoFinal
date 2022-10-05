@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Indiefolio Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel='stylesheet' href='https://harvesthq.github.io/chosen/chosen.css'>
+	<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/dashboard-profile.css">
+	<link rel="stylesheet" href="css/theme-responsive.css">
+</head>
+<body>
+<!-- Header Section -->
+<section class="main-header bg-custom">
+	<div class="container-fluid main-header">
+		<nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
+		  <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-fluid" alt="Indiefolio" title="Indiefolio"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+		    <ul class="navbar-nav d-flex align-items-center"> 
+			  <li class="nav-item">
+		        <a class="nav-link active" href="#">Dashboard</a>
+			  </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="#">Messages</a>
+			  </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="#">Services</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Help & Support</a>
+			  </li>
+			  <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+			  </li>
+			  <li class="nav-item profile-header profile-inner dropdown">
+		        <a class="nav-link pr-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<div class="user-profile-blank">
+						<img src="images/user-default.png" alt="profile" title="">
+					</div>
+				</a>
+				<div class="dropdown-menu outer-nav-wrap bg-shadow" aria-labelledby="navbarDropdown">
+					<span class="dropdown-menu-arrow nav-arrow"></span>
+					<a class="dropdown-item font-weight-600" href="#">Profile</a>
+					<a class="dropdown-item font-weight-600" href="#">Account</a> 
+					<a class="dropdown-item font-weight-600 text-danger" href="#">Logout</a> 
+				</div> 
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link main-btn pt-2 pb-2 text-white" href="#">Upload a project</a>
+		      </li> 
+		    </ul>
+		  </div>
+		</nav>
+	</div> 
+</section> 
+
+
+<!-- Main Content Section-->
+<section>
+	<div class="container-fluid p-4 mob-p-0 ipad-normal-p-0">
+		<div class="row m-0">
+			<div class="col-sm-9 col-md-9 col-lg-9 profile-inner mob-p-0 ipad-normal-col-100 ipad-normal-p-0"> 
+				<div class="card-wrapper mob-text-center mob-mb-10 ipad-mb-15">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="row m-0 pX_pY_30 mob-pb-10 position-relative">
+
+								<!-- Mobile content -->
+								<div class="edit_icon mobile-ipad-show">
+									<i class="fas fa-ellipsis-h"></i>
+								</div>
+								<div class="mobile-header-fixed">
+									<div class="row m-0 align-items-center">
+										<div class="col-10 d-flex align-items-center pl-0"> 
+											<p class="mb-0"><img src="images/account-manager.png" alt="profile" title="" width="35"></p>  
+											<h2 class="text-capitalize font-18 pl-2 mb-0 font-weight-600">Bojan Jonic</h2>  
+										</div>
+
+										<!-- Mobile Review Button -->
+										<div class="col-10 d-flex align-items-center pl-0 hidden">
+											<div class="mob_get_verify border-0">	
+												<h2><i class="fas fa-arrow-left mr-2"></i> Reviews</h2>
+											</div> 
+										</div>
+
+										<div class="col-2 text-right ipad-pr-0">
+											<div class="mobile-header-edit">
+												<i class="fas fa-ellipsis-h"></i>
+											</div>
+										</div> 
+									</div> 
+								</div> 
+								<div class="mobile-footer-fixed">
+									<ul>
+										<li><a href="#"><span class="d-block text-center"><i class="fas fa-align-left mr-1 footer_icon footer-icon-border"></i></span> Dashboard</a></li>
+										<li><a href="#" class="active"><span class="d-block text-center"><i class="fas fa-user mr-1 footer_icon footer-icon-border active"></i></span> Profile</a></li>
+										<li><a href="#"><span class="d-block text-center upload-btn-minus"><i class="fas fa-plus mr-1 footer_icon footer-icon-border mobile-upload"></i></span> Upload</a></li>
+										<li><a href="#"><span class="d-block text-center"><i class="fas fa-cog mr-1 footer_icon extra-size"></i></span> Setting</a></li>
+										<li><a href="#"><span class="d-block text-center"><i class="fas fa-comment mr-1 footer_icon extra-size"></i></span> Support</a></li>
+									</ul>
+								</div>  
+
+								<div class="col-sm-12 col-md-12 col-lg-12">
+									<div class="d-flex mob-d-block">
+										<div class="profile-user">
+											<div>
+												<img src="images/account-manager.png" alt="profile" title="">
+											</div> 
+										</div>
+										<div class="w-100">
+											<div class="d-block pl-4 mob-p-0">
+												<h2 class="profile_title pt-2 text-capitalize">Bojan Joncic 
+													<a href="#" class="font-12 font-weight-600 text-primary float-right mob_display_none_off" data-toggle="modal" data-target="#EditProfileModal">
+														<i class="fas fa-pencil-alt"></i> Edit
+													</a> 
+												</h2>
+												<span class="profile-subTitle text-capitalize">UX/UI Designer <span class="dot pl-3">New Delhi, India</span></span>
+												<p class="w-75 pt-2 font-weight-500 mob-w-100 ipad-w-100">
+													Product Designer from belgrade. Working with small to medium startups. Passion projects and raising a kid in spare time. Say hello@designeat.com
+													<a href="#" class="font-12 font-weight-600 text-primary text-center d-block pt-3 desktop_ipadPro_display_none" data-toggle="modal" data-target="#EditProfileModal">
+														<i class="fas fa-pencil-alt"></i> Edit
+													</a> 
+												</p>
+												<div class="w-80 rating py-3 laptop-w-100 ipadPro-w-100 mob-w-100 mob_d mob_display_none_off">
+													<ul class="dflex">
+														<li class="font-16 text-dark-black"><i class="fas fa-star text-success"></i> 4.2 <span class="d-block font-14">45 User reviews</span></li>
+														<li>6 <span class="d-block">Projects Completed</span></li>
+														<li>3 hrs <span class="d-block">Avg. response time</span></li>
+														<li>3 <span class="d-block">Repeat hires</span></li>
+													</ul>
+												</div>
+											</div>
+										</div> 
+									</div> 
+								</div> 
+							</div>  
+						</div>
+					</div>
+				</div>
+
+				<!--Mobile Content -->
+				<div class="card-wrapper mob-text-center mobile-ipad-show mob-mb-10"> 
+					<div class="card mt-2 mob-border-radius-0">
+						<div class="card-body">
+							<div class="rating py-3 w-100">
+								<p class="mob-font-20 font-weight-800 text-dark-black mob-d-block"><i class="fas fa-star text-success"></i> 4.2 <span class="d-block mob-font-13 text-primary">45 User reviews</span></p>
+								<ul class="dflex pb-2 overflow-hidden"> 
+									<li class="mob-p-0 mob-w-75 ipad-w-75">6 <span class="d-block w-75 m-auto font-weight-500">Projects Completed</span></li>
+									<li class="mob-p-0 mob-w-75 ipad-w-75">3 hrs <span class="d-block w-75 m-auto font-weight-500">Avg. response time</span></li>
+									<li class="mob-p-0 mob-w-75 ipad-w-75">3 <span class="d-block w-50 m-auto font-weight-500">Repeat hires</span></li>
+								</ul>
+							</div>
+						</div>
+					</div> 
+				</div>
+				<div class="card-wrapper mob-mb-10">
+					<div class="main-content mob-bg-white mob-p-15">
+						<ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+							<li class="nav-item">
+							  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">UX/UI Design</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Logo Design</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Brochure Design</a>
+							</li> 
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<ol class="content custom_form">
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											  <div class="content-shot"> 
+												  <div class="content-img">
+													  <a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														  <picture> 
+																<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														  </picture>
+													  </a> 
+													<div class="dropdown_btn content-over portfolio"> 
+														<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<i class="fas fa-ellipsis-h dropdown_icon"></i>
+														</span>
+														<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+															<!-- <span class="dropdown-menu-arrow"></span> -->
+															<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#editWorkSection">Edit</a>
+															<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+															<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+														</div>
+													</div>  
+												  </div>  
+											  </div>  
+											</div>
+											<p class="d-line w-100 font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+												Lead Overview -Dark
+											</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											  <div class="content-shot"> 
+												  <div class="content-img">
+													  <a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														  <picture> 
+																<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														  </picture>
+													  </a> 
+													<div class="dropdown_btn content-over portfolio"> 
+														<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<i class="fas fa-ellipsis-h dropdown_icon"></i>
+														</span>
+														<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+															<!-- <span class="dropdown-menu-arrow"></span> -->
+															<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#editWorkSection">Edit</a>
+															<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+															<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+														</div>
+													</div>  
+												  </div>  
+											  </div>  
+											</div>
+											<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+												Lead Overview -Dark
+											</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											  <div class="content-shot"> 
+												  <div class="content-img">
+													  <a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														  <picture> 
+																<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														  </picture>
+													  </a> 
+													<div class="dropdown_btn content-over portfolio"> 
+														<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<i class="fas fa-ellipsis-h dropdown_icon"></i>
+														</span>
+														<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+															<!-- <span class="dropdown-menu-arrow"></span> -->
+															<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#editWorkSection">Edit</a>
+															<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+															<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+														</div>
+													</div>  
+												  </div>  
+											  </div>  
+											</div>
+											<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+												Lead Overview -Dark
+											</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+													<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														<picture> 
+															<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														</picture>
+													</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#editWorkSection">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+												<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+													<picture> 
+														<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+													</picture>
+												</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#editWorkSection">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li>
+								</ol>
+							</div>
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								<ol class="content custom_form">
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+													<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														<picture> 
+															<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														</picture>
+													</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+													<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														<picture> 
+															<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														</picture>
+													</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li> 
+								</ol>
+							</div>
+							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+								<ol class="content custom_form">
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+													<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														<picture> 
+															<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														</picture>
+													</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+													<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														<picture> 
+															<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														</picture>
+													</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li>
+									<li class="team shot-thumbnail">
+										<div class="multi-shot"> 
+											<div class="content-shot"> 
+												<div class="content-img">
+													<a class="content-link" href="javascript:void;" data-lightbox="mygallery" data-title="Dribbble">
+														<picture> 
+															<img alt="Vicente Font Family" src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png">
+														</picture>
+													</a> 
+												<div class="dropdown_btn content-over portfolio"> 
+													<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fas fa-ellipsis-h dropdown_icon"></i>
+													</span>
+													<div class="dropdown-menu dropdown-list-menu" aria-labelledby="dropdownMenuButton">
+														<!-- <span class="dropdown-menu-arrow"></span> -->
+														<a class="dropdown-item font-weight-600" href="#">Edit</a>
+														<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+														<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+													</div>
+												</div>  
+												</div>  
+											</div>  
+										</div>
+										<p class="font-16 mob-font-14 font-weight-600 py-2 pl-2 mb-0">
+											Lead Overview -Dark
+										</p>  
+									</li> 
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper mob-mb-20">
+					<div class="card mob-border-radius-0">
+						<div class="card-body"> 
+							<div class="profile-headline dflex py-2">
+								<h2 class="text-uppercase font-weight-600 py-2 mob-font-14">Recommendations and review <span class="text-secondary font-weight-600">45</span></h2> 
+							</div>  
+							<div class="custom_form py-3 px-4 account-setting bor-bottom mob-p-10">
+								<div class="pt-2">
+									<div class="row m-0">
+										<div class="col-sm-2 col-md-2 col-lg-2">
+											<div class="recommendation">
+												<img src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png" class="img-fluid">
+											</div>
+										</div>
+										<div class="col-sm-10 col-md-10 col-lg-10 mob-pt-15">
+											<div class="w-100 rating">
+												<h2 class="font-16 font-weight-600 mob-font-14">Cardboard Display Design 
+													<span class="text-success">4.2</span>
+													<div class="d-inline-block">
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12"></i></span>
+													</div> 
+												</h2> 
+												<p>
+													<q class="quotes text-dark-black font-weight-500 mob-font-12">Great experience! I needed something done very quickly and Jurrien delivered it on time.</q>
+												</p>
+											</div>
+											<div class="w-100 d-flex align-items-center">
+												<div class="">
+													<p class="mb-2 re-view"><img src="images/account-manager.png" alt="profile" title="" width="35"></p>
+												</div>
+												<div class="pl-3">
+													<h2 class="text-capitalize m-0 font-13 mob-font-12">Anuj Birla</h2>
+													<span class="profile-subTitle font-12 mob-font-11 text-capitalize">Founder at Grappus</span>
+												</div>
+											</div> 
+										</div>
+									</div> 
+								</div> 
+							</div>
+							<div class="custom_form py-3 px-4 account-setting bor-bottom mob-p-10">
+								<div class="pt-2">
+									<div class="row m-0">
+										<div class="col-sm-2 col-md-2 col-lg-2">
+											<div class="recommendation">
+												<img src="https://cdn.dribbble.com/users/1312159/screenshots/11126837/caffetarium-dribbble_2x.png" class="img-fluid">
+											</div>
+										</div>
+										<div class="col-sm-10 col-md-10 col-lg-10 mob-pt-15">
+											<div class="w-100 rating">
+												<h2 class="font-16 font-weight-600 mob-font-14">Cardboard Display Design 
+													<span class="text-success">4.2</span>
+													<div class="d-inline-block">
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12 text-success"></i></span>
+														<span><i class="fas fa-star font-12"></i></span>
+													</div> 
+												</h2> 
+												<p>
+													<q class="quotes text-dark-black font-weight-500 mob-font-12">Great experience! I needed something done very quickly and Jurrien delivered it on time.</q>
+												</p>
+											</div>
+											<div class="w-100 d-flex align-items-center">
+												<div class="">
+													<p class="mb-2 re-view"><img src="images/account-manager.png" alt="profile" title="" width="35"></p>
+												</div>
+												<div class="pl-3">
+													<h2 class="text-capitalize m-0 font-13 mob-font-12">Anuj Birla</h2>
+													<span class="profile-subTitle font-12 mob-font-11 text-capitalize">Founder at Grappus</span>
+												</div>
+											</div> 
+										</div>
+									</div> 
+								</div> 
+							</div>  
+							<div class="text-center">
+								<p class="mt-12 view-more"><span class="font-12 text-primary font-weight-600 p-1 bg-white" id=""><i class="fas fa-chevron-down"></i> Read more</span></p>
+							</div>  
+						</div>
+					</div>
+				</div>     
+			</div>
+			<div class="col-sm-3 col-md-3 col-lg-3 profile-inner mob-p-0 ipad-normal-col-100">
+				<div class="card-wrapper mb-20 mob-mx-15"> 
+					<button type="button" class="main-btn w-100">View public profile</button> 
+				</div>
+				<div class="card-wrapper mb-20 mob-mb-10">
+					<div class="card mob-border-radius-0">
+						<div class="card-body">  
+							<div class="row m-0 px-4 pt-4 pb-3 ipadPro-p-15">
+								<div class="col-sm-12 dflex p-0">
+									<p class="sub-text font-12 font-weight-500 mb-1 d-inline">Current Status</p> 
+									<a href="#" class="font-12 font-weight-600 text-primary">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 p-0">
+									<h2 class="text-light-color font-14 font-weight-600 text-underline mb-0 active">Fulltime Freelancer</h2>
+								</div>
+								<div class="col-sm-12 dflex px-0 pt-4">
+									<p class="sub-text font-12 font-weight-500 mb-1 d-inline">Social profiles</p> 
+									<a href="#" class="font-12 font-weight-600 text-primary" data-toggle="modal" data-target="#EditWebLinkModal">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 p-0">
+									 <p class="py-2 re-view">
+										 <img src="images/social-profile-1.png" alt="social-profile" class="img-fluid">
+										 <img src="images/social-profile-2.png" alt="social-profile" class="img-fluid mx-2">
+										 <img src="images/social-profile-3.png" alt="social-profile" class="img-fluid">
+									 </p>
+									 <button type="button" class="main-btn w-100 bg-light-gray font-12 py-1 font-weight-500"><i class="fas fa-info-circle mr-1"></i> This information in only visible to you</button>
+								</div>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<div class="card-wrapper custom_form mb-20 mob-m-0">
+					<div class="card mob-border-radius-0">
+						<div class="card-body">  
+							<div class="row m-0 p-4 right_sidebar bor-bottom ipadPro-p-15">
+								<button type="button" class="main-btn w-100 mb-4">Hire Bojan</button> 
+								<div class="col-sm-12 dflex p-0 mb-4">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Collaterals offered</h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary" data-toggle="modal" data-target="#EditCollateralModal">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-12 col-sm-12 mb-3 p-2 bg-purple under-review multi-shot position-relative" style="background-image: url(images/phone.png); background-position: center right; background-size: 120px; background-repeat: no-repeat; width: 130px; height: 52px; border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px; -o-border-radius:8px; position: relative;">
+									<h3 class="font-16 text-white font-weight-500 m-0 p-2">Web Design</h3>
+									<div class="dropdown_btn content-over portfolio"> 
+										<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-search dropdown_icon"></i>
+										</span>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<span class="under_review_search"><i class="fas fa-caret-down"></i></span>
+											<a class="dropdown-item font-weight-600" href="#">Collateral under review...</a> 
+										</div>
+									</div>  
+								</div>
+								<div class="col-12 col-sm-12 mb-3 p-2 bg-offer under-review multi-shot position-relative" style="background-image: url(images/phone.png); background-position: center right; background-size: 120px; background-repeat: no-repeat; width: 130px; height: 52px; border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px; -o-border-radius:8px; position: relative;">
+									<h3 class="font-16 text-white font-weight-500 m-0 p-2">Illustration</h3>
+									<div class="dropdown_btn content-over portfolio"> 
+										<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-search dropdown_icon"></i>
+										</span>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<span class="under_review_search"><i class="fas fa-caret-down"></i></span>
+											<a class="dropdown-item font-weight-600" href="#">Collateral under review...</a> 
+										</div>
+									</div>  
+								</div>
+								<div class="col-12 col-sm-12 mb-2 p-2 bg-black under-review multi-shot position-relative" style="background-image: url(images/phone.png); background-position: center right; background-size: 120px; background-repeat: no-repeat; width: 130px; height: 52px; border-radius:8px; -webkit-border-radius:8px; -moz-border-radius:8px; -ms-border-radius:8px; -o-border-radius:8px; position: relative;">
+									<h3 class="font-16 text-white font-weight-500 m-0 p-2">Photography</h3>
+									<div class="dropdown_btn content-over portfolio"> 
+										<span class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-search dropdown_icon"></i>
+										</span>
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+											<span class="under_review_search"><i class="fas fa-caret-down"></i></span>
+											<a class="dropdown-item font-weight-600" href="#">Collateral under review...</a> 
+										</div>
+									</div>  
+
+								</div>   
+							</div>
+							<div class="row m-0 p-4 bor-bottom ipadPro-p-15">
+								<div class="col-sm-12 dflex p-0">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Specializations</h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary" data-toggle="modal" data-target="#EditSpecializationsModal">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 px-0 pt-3 d-flex align-items-center flex-wrap">
+									<div class="tags">Branding</div>
+									<div class="tags">Graphic Design</div>
+									<div class="tags">Branding</div>
+									<div class="tags">Photography</div>
+									<div class="tags">Photography</div>
+								</div> 
+							</div>
+							<div class="row m-0 p-4 bor-bottom ipadPro-p-15">
+								<div class="col-sm-12 dflex p-0">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Tools</h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 px-0 pt-3">
+									<div class="d-flex align-items-center mb-2">
+										<div class="">
+											<p class="mb-2 re-view"><img src="images/tool-1.png" alt="profile" title="" width="35" class="rounded-0"></p>
+										</div>
+										<div class="pl-3">
+											<h2 class="text-capitalize mb-2 font-14 font-weight-600 text-third">Photoshop</h2> 
+										</div>
+									</div>
+									<div class="d-flex align-items-center mb-2">
+										<div class="">
+											<p class="mb-2 re-view"><img src="images/tool-2.png" alt="profile" title="" width="35" class="rounded-0"></p>
+										</div>
+										<div class="pl-3">
+											<h2 class="text-capitalize mb-2 font-14 font-weight-600 text-third">Adobe After Effects</h2> 
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<div class="">
+											<p class="mb-2 re-view"><img src="images/tool-3.png" alt="profile" title="" width="35" class="rounded-0"></p>
+										</div>
+										<div class="pl-3">
+											<h2 class="text-capitalize mb-2 font-14 font-weight-600 text-third">Illustrator</h2> 
+										</div>
+									</div>
+								</div> 
+							</div> 
+							<div class="row m-0 p-4 bor-bottom ipadPro-p-15">
+								<div class="col-sm-12 dflex p-0">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Experience <span class="text-third">5 Years</span></h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary" data-toggle="modal" data-target="#EditWorkExperienceModal">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 px-0 pt-3">
+									<div class="d-flex mb-2 pb-3 bor-bottom">
+										<div class="">
+											<p class="mb-2 ex-perience"><img src="images/experience-2.png" alt="profile" title="" width="35"></p>
+										</div>
+										<div class="pl-3">
+											<h2 class="text-capitalize mb-1 font-14 font-weight-600">Senior Visual Designer</h2>
+											<span class="profile-subTitle font-12 text-capitalize d-block">Grofers <span class="dot pl-3">Freelancer</span></span>
+											<span class="profile-subTitle font-12 text-capitalize">2y 6mo - Present</span>  
+										</div>
+									</div>
+									<div class="d-flex mb-2 pt-2">
+										<div class="">
+											<p class="mb-2 ex-perience"><img src="images/experience-1.png" alt="profile" title="" width="50"></p>
+										</div>
+										<div class="pl-3">
+											<h2 class="text-capitalize mb-1 font-14 font-weight-600">Senior Visual Designer</h2>
+											<span class="profile-subTitle font-12 text-capitalize d-block">Grappus <span class="dot pl-3">Intern</span></span>
+											<span class="profile-subTitle font-12 text-capitalize">2y 6mo - Present</span>  
+										</div>
+									</div> 
+								</div> 
+							</div>
+							<div class="row m-0 p-4 bor-bottom ipadPro-p-15">
+								<div class="col-sm-12 dflex p-0">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Education</h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary" data-toggle="modal" data-target="#EditEducationModal">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 px-0 pt-3"> 
+									<div class="d-flex mb-2 pt-2">
+										<div class="">
+											<p class="mb-2 ex-perience"><img src="images/experience-1.png" alt="profile" title="" width="50"></p>
+										</div>
+										<div class="pl-3">
+											<h2 class="text-capitalize mb-1 font-14 font-weight-600">Bachelor of Design</h2>
+											<span class="profile-subTitle font-12 text-capitalize d-block">National Institute of Design</span>
+											<span class="profile-subTitle font-12 text-capitalize">Aug 2012 - Dec 2016</span>  
+										</div>
+									</div> 
+								</div> 
+							</div>
+							<div class="row m-0 p-4 bor-bottom ipadPro-p-15">
+								<div class="col-sm-12 dflex p-0">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Awards</h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 px-0 pt-3"> 
+									<div class="d-flex mb-2 pt-2">
+										<div class="">
+											<p class="mb-2 ex-perience"><i class="fas fa-trophy text-success"></i></p>
+										</div>
+										<div class="pl-2">
+											<h2 class="text-capitalize mb-1 font-14 font-weight-600">UI of the week - Awwwards 2016</h2>   
+										</div>
+									</div> 
+								</div> 
+							</div>
+							<div class="row m-0 p-4 ipadPro-p-15 mob-mb-70 ipad-mb-70">
+								<div class="col-sm-12 dflex p-0">
+									<h2 class="text-capitalize text-light-color font-15 font-weight-600 text-underline mb-0 active">Languages</h2> 
+									<a href="#" class="font-12 font-weight-600 text-primary">
+										<i class="fas fa-pencil-alt"></i> Edit
+									</a>
+								</div>
+								<div class="col-sm-12 px-0 pt-3 d-flex align-items-center flex-wrap">
+									<div class="tags">English</div>
+									<div class="tags">Hindi</div> 
+								</div>  
+							</div>
+						</div>
+					</div>
+				</div> 	 
+			</div> 
+		</div> 
+	</div>
+</section>
+
+<!-- Edit Basic Details Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="EditProfileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 remove-pd"> 
+					<div class="profile-creator">
+						<div class="px-4 py-3">
+							<p class="text-white mb-1 font-weight-500">Edit Profile</p>
+							<h2 class="mt-0 font-weight-500">Basic Details</h2>
+						</div> 
+					</div>
+				</div> 
+			</div>
+			<div class="row m-0"> 
+				<div class="col-sm-12 col-md-12 col-lg-12 overflow-content basic-height"> 
+					<div class="profile-user mob-profile-user pX_pY_30 d-flex align-items-center">
+						<div>
+							<img src="images/account-manager.png" alt="profile" title="">
+						</div>
+						<div class="pl-3"> 
+							<button type="button" class="main-btn bg-light-gray font-weight-600 small-font-11">Upload new photo</button> 
+						</div>
+					</div>
+					<div class="custom_form">
+						<form method="post" action="">
+							<div class="row m-0">
+								<div class="form-group mb-4 col-sm-6">
+									<label class="label font-weight-600" for="first">First name</label>
+									<input type="text" class="form-control email" placeholder="Bojan">
+								</div> 
+								<div class="form-group w-98 mb-4 col-sm-6">
+									<label class="label font-weight-600" for="last">Last name</label>
+									<input type="text" class="form-control email" placeholder="Joncic">
+								</div>
+								<div class="form-group position-relative mb-4 col-sm-6">
+									<label class="label font-weight-600" for="primary">Primary Creative Field</label>
+									<div class="filter-dropdown">
+										<div class="select">
+											<select id="mounth">
+												<option value="hide">Choose here</option>
+												<option value="male">Male</option>
+												<option value="female">Female</option>
+											</select> 
+										</div>
+										<i class="fas fa-chevron-down select-arrow"></i>
+									</div>
+								</div>
+								<div class="form-group position-relative mb-4 col-sm-6 edit-location">
+									<label class="label font-weight-600" for="primary">Location</label>
+									<input type="text" class="form-control email" placeholder="Choose Location">
+									<ul class="select-options position-top w-60" style="display: block;">
+										<li rel="hide">Choose here</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+									</ul> 
+								</div>
+								<div class="form-group mb-4 col-sm-12">
+									<label class="label font-weight-600" for="first">About the project</label>
+									<textarea class="form-control email min-h-60" id="comment"></textarea>
+								</div> 
+							</div>  
+							<div class="form-group text-right pr-3 pt-3">
+								<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+								<button type="button" class="main-btn px-4 ml-2">Save</button>
+							</div>  
+						</form>
+					</div> 
+				</div> 
+			</div>  
+		</div> 
+	  </div>
+	</div>
+</div>
+ 
+<!-- Edit Collateral Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="EditCollateralModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 remove-pd"> 
+					<div class="profile-creator edit-collateral-modal">
+						<div class="px-4 py-3">
+							<p class="text-white mb-1 font-weight-500">Edit Profile</p>
+							<h2 class="mt-0 font-weight-500">Collateral offered</h2>
+						</div> 
+					</div>
+				</div> 
+			</div>
+			<div class="row m-0"> 
+				<div class="col-sm-12 col-md-12 col-lg-12 overflow-content edit-collateral-height"> 
+					<div class="custom_form edit-collateral-form-modal pt-4 mb-4">
+						<div class="card bg-purple">
+							<div class="card-body">
+								<div class="sub_dflex py-3 px-4 collaterals mob-justify-content-between small-py-15">
+									<h2 class=" text-capitalize text-white font-18 mob-font-14 m-0 font-weight-500">Web Design</h2> 
+									<div class="form-group mb-0 pl-3 w-60 mob-hidden">
+										<span class="sub_title text-white">5 years experience</span>
+										<span class="sub_title text-white px-4">Average time taken 2 weeks</span>
+										<span class="sub_title text-white"><i class="fas fa-rupee-sign pr-1"></i>10k - <i class="fas fa-rupee-sign pr-1"></i>20k</span>
+									</div>
+									<div class="w-25 text-right">
+										<span><i class="fas fa-chevron-down font-15 mob-font-14 text-white pl-3 collacteral position-relative"></i></span>
+										<span><i class="fas fa-times text-white font-15 mob-font-14 pl-3"></i></span>
+									</div>
+								</div> 
+							</div> 
+						</div>
+
+						<div class="border-bottom-2 my-20 mob-my-20"></div>
+
+						<div class="card bg-offer">
+							<div class="card-body">
+								<div class="sub_dflex py-3 px-4 collaterals mob-justify-content-between small-py-15">
+									<h2 class=" text-capitalize text-white font-18 mob-font-14 m-0 font-weight-500">Web Design</h2> 
+									<div class="form-group mb-0 pl-3 w-60 mob-hidden">
+										<span class="sub_title text-white">5 years experience</span>
+										<span class="sub_title text-white px-4">Average time taken 2 weeks</span>
+										<span class="sub_title text-white"><i class="fas fa-rupee-sign pr-1"></i>10k - <i class="fas fa-rupee-sign pr-1"></i>20k</span>
+									</div>
+									<div class="w-25 text-right">
+										<span><i class="fas fa-chevron-down font-15 mob-font-14 text-white pl-3 collacteral position-relative"></i></span>
+										<span><i class="fas fa-times text-white font-15 mob-font-14 pl-3"></i></span>
+									</div>
+								</div> 
+							</div> 
+						</div>
+
+						<div class="wrapper-form px-4 pb-4 tabs-form mob-p-15 hidden">
+							<form method="post" action="">
+								<div class="row m-0">
+									<div class="form-group mt-2 mb-4 col-sm-12 pl-0 position-relative mob-p-0">
+										<label class="label font-weight-600 font-14 mob-font-13" for="first">Choose collateral</label>
+										<input type="text" class="form-control email" placeholder="Search collateral">
+										<span class="font-14 input-icon sub_title font-weight-500 pt-2 d-block"><i class="fas fa-search"></i></span>
+									</div>
+									<div class="form-group row m-0">
+										<div class="form-group mb-4 col-sm-4 pl-0 experience-section mob-p-0">
+											<label class="label font-weight-600 font-14 mob-font-13" for="first">Experience</label>
+											<div class="input-group w-75 mob-w-100">
+												<div class="input-group-prepend">
+												  <span class="input-group-text input-text-left font-12"><i class="fas fa-minus"></i></span>
+												</div>
+												<input type="text" class="form-control email pl-3" placeholder="5 years">
+												<div class="input-group-append">
+												  <span class="input-group-text input-text-right font-12"><i class="fas fa-plus"></i></span>
+												</div>
+											  </div>
+										</div>
+										<div class="form-group mb-4 col-sm-6 mob-col-58 pl-0 experience-section mob-p-0"> 
+											<label class="label font-weight-600 font-14 mob-font-13" for="first">Average time taken</label>
+											<div class="d-flex align-items-center">
+												<div class="input-group w-35 mob-w-45">
+													<div class="input-group-prepend">
+													<span class="input-group-text input-text-left font-12"><i class="fas fa-minus"></i></span>
+													</div>
+													<input type="text" class="form-control email pl-3" placeholder="3">
+													<div class="input-group-append">
+													<span class="input-group-text input-text-right font-12"><i class="fas fa-plus"></i></span>
+													</div>
+												</div>
+												<div class="input-group w-48 ml-4">
+													<div class="input-group-prepend">
+													  <span class="input-group-text input-text-left font-14"><i class="fas fa-angle-left"></i></span>
+													</div>
+													<input type="text" class="form-control email pl-3" placeholder="Months">
+													<div class="input-group-append">
+													  <span class="input-group-text input-text-right font-14"><i class="fas fa-angle-right"></i></span>
+													</div>
+												  </div>
+											</div> 
+										</div> 
+									</div> 
+									<div class="form-group mb-4 col-sm-12 pl-0 mob-p-0">
+										<label class="label font-weight-600 font-14 mob-font-13" for="last">How much do you change for a logo design project?</label>
+										<div class="w-100 dflex">
+											<input type="text" class="form-control email w-96 mob-w-45" placeholder="Enter details here">
+											<span class="font-14 input-icon text-light-gray font-weight-500 pt-2 d-block"><i class="fas fa-rupee-sign"></i></span>
+											<span class="w-8 text-center font-20">-</span> 
+											<input type="text" class="form-control email w-96 mob-w-45" placeholder="Enter details here">
+											<span class="font-14 input-icon icon-right text-light-gray font-weight-500 pt-2 d-block"><i class="fas fa-rupee-sign"></i></span> 
+										</div> 
+									</div> 
+								</div>  
+								<div class="form-group text-right pr-3 pt-1 pb-2 mb-0">
+									<button type="button" class="main-btn px-4">Save</button> 
+								</div>  
+							</form>
+						</div> 
+
+						<div class="w-100 py-4 dflex">
+							<a href="#" class="font-13 mob-font-12 font-weight-600 text-center"><i class="fas fa-plus mr-1"></i> Add collateral</a>
+							<span class="add-collateral-underline"></span> 
+						</div>
+
+						<div class="wrapper-form p-4 mob-p-15">
+							<form method="post" action="">
+								<div class="row m-0">
+									<div class="form-group mb-4 col-sm-12 pl-0 position-relative mob-p-0">
+										<label class="label font-weight-600 font-14 mob-font-13" for="first">Choose collateral</label>
+										<input type="text" class="form-control email" placeholder="Search collateral">
+										<span class="font-14 input-icon sub_title font-weight-500 pt-2 d-block"><i class="fas fa-search"></i></span>
+									</div>
+									<div class="form-group row m-0">
+										<div class="form-group mb-4 col-sm-4 pl-0 experience-section mob-p-0">
+											<label class="label font-weight-600 font-14 mob-font-13" for="first">Experience</label>
+											<div class="input-group w-75 mob-w-100">
+												<div class="input-group-prepend">
+												  <span class="input-group-text input-text-left font-12"><i class="fas fa-minus"></i></span>
+												</div>
+												<input type="text" class="form-control email pl-3" placeholder="5 years">
+												<div class="input-group-append">
+												  <span class="input-group-text input-text-right font-12"><i class="fas fa-plus"></i></span>
+												</div>
+											  </div>
+										</div>
+										<div class="form-group mb-4 col-sm-6 mob-col-58 pl-0 experience-section mob-p-0"> 
+											<label class="label font-weight-600 font-14 mob-font-13" for="first">Average time taken</label>
+											<div class="d-flex align-items-center">
+												<div class="input-group w-35 mob-w-45">
+													<div class="input-group-prepend">
+													<span class="input-group-text input-text-left font-12"><i class="fas fa-minus"></i></span>
+													</div>
+													<input type="text" class="form-control email pl-3" placeholder="3">
+													<div class="input-group-append">
+													<span class="input-group-text input-text-right font-12"><i class="fas fa-plus"></i></span>
+													</div>
+												</div>
+												<div class="input-group w-48 ml-4">
+													<div class="input-group-prepend">
+													  <span class="input-group-text input-text-left font-14"><i class="fas fa-angle-left"></i></span>
+													</div>
+													<input type="text" class="form-control email pl-3" placeholder="Months">
+													<div class="input-group-append">
+													  <span class="input-group-text input-text-right font-14"><i class="fas fa-angle-right"></i></span>
+													</div>
+												  </div>
+											</div> 
+										</div> 
+									</div> 
+									<div class="form-group mb-4 col-sm-12 pl-0 mob-p-0">
+										<label class="label font-weight-600 font-14 mob-font-13" for="last">How much do you change for a logo design project?</label>
+										<div class="w-100 dflex">
+											<input type="text" class="form-control email w-96 mob-w-45" placeholder="Enter details here">
+											<span class="font-14 input-icon text-light-gray font-weight-500 pt-2 d-block"><i class="fas fa-rupee-sign"></i></span>
+											<span class="w-8 text-center font-20">-</span> 
+											<input type="text" class="form-control email w-96 mob-w-45" placeholder="Enter details here">
+											<span class="font-14 input-icon icon-right text-light-gray font-weight-500 pt-2 d-block"><i class="fas fa-rupee-sign"></i></span> 
+										</div> 
+									</div> 
+								</div>  
+								<div class="form-group text-right pr-3 pt-1 pb-2 mb-0 mob-pr-0">
+									<button type="button" class="main-btn px-4">Save</button> 
+								</div>  
+							</form>
+						</div> 
+					</div>
+					<div class="row mt-2 bg-shadow-top mobile-edit-collateral">
+						<div class="col-sm-12 p-0 text-right pr-3 py-3">
+							<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+							<button type="button" class="main-btn px-4 ml-2">Save</button>
+						</div>
+					</div> 
+				</div> 
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 p-0 bg-shadow-top desktop-ipad-show">
+					<div class="form-group text-right pr-3 pt-3">
+						<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+						<button type="button" class="main-btn px-4 ml-2">Save</button>
+					</div>
+				</div>
+			</div>  
+		</div> 
+	  </div>
+	</div>
+</div>
+
+<!-- Edit Specializations Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="EditSpecializationsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 remove-pd"> 
+					<div class="profile-creator ml-05">
+						<div class="px-4 py-3">
+							<p class="text-white mb-1 font-weight-500">Edit Profile</p>
+							<h2 class="mt-0 font-weight-500">Specializations</h2>
+						</div> 
+					</div>
+				</div> 
+			</div>
+			<div class="row m-0"> 
+				<div class="col-sm-12 mob-pt-25 mob-col-100"> 
+					<div class="custom_form py-4 px-2 mob-p-0">
+						<form method="post" action="">
+							<div class="row m-0">
+								<div class="form-group w-98 mb-4 col-sm-12 p-0 mob-p-0 mob-w-100">
+									<label class="label font-weight-600 font-14 mob-font-13" for="last">What's your primary field of work?</label> 
+									<input type="email" class="form-control email" placeholder="Search specialization">
+									<span class="font-12 sub_title font-weight-500 pt-2 d-block">Select upto 4 areas you specialise in</span>
+									<ul class="select-options select-position w-50" style="display: none;">
+										<li rel="hide">Choose here</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+									</ul>
+								</div>
+								<div class="form-group w-98 mb-4 col-sm-12 p-0 mob-p-0 mob-w-100">
+									<label class="label font-weight-600 font-14 mob-font-13" for="last">Choose your specialization</label>  
+									<input type="email" class="form-control email" placeholder="Choose your specialization">
+									<span class="font-12 sub_title font-weight-500 pt-2 d-block">Select upto 4 areas you specialise in</span>
+									<ul class="select-options select-position w-50" style="display: none;">
+										<li rel="hide">Choose here</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+									</ul>
+								</div>
+								<div class="form-group w-98 mb-4 col-sm-12 p-0 mob-p-0 mob-w-100">
+									<label class="label font-weight-600 font-14 mob-font-13" for="last">What software do you work with?</label>  
+									<input type="email" class="form-control email" placeholder="Search software">
+									<span class="font-12 sub_title font-weight-500 pt-2 d-block">Select upto 10 tools</span>
+									<ul class="select-options select-position w-50" style="display: none;">
+										<li rel="hide">Choose here</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+										<li rel="male">Male</li>
+										<li rel="female">Female</li>
+									</ul>
+								</div>
+							</div>  
+							<div class="form-group text-right pt-3 mob-pr-0 mob-mb-30 mob-pt-0">
+								<button type="button" class="main-btn px-4">Save</button>
+							</div>  
+						</form>
+					</div>
+					<div class="row mt-2 bg-shadow-top mobile-edit-collateral">
+						<div class="col-sm-12 p-0 text-right pr-3 py-3">
+							<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+							<button type="button" class="main-btn px-4 ml-2">Save</button>
+						</div>
+					</div> 
+				</div> 
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 p-0 bg-shadow-top desktop-ipad-show">
+					<div class="form-group text-right pr-3 pt-3">
+						<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+						<button type="button" class="main-btn px-4 ml-2">Save</button>
+					</div>
+				</div>  
+			</div>  
+		</div> 
+	  </div>
+	</div>
+</div>
+
+
+<!-- Edit Work Experience Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="EditWorkExperienceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 remove-pd"> 
+					<div class="profile-creator">
+						<div class="px-4 py-3">
+							<p class="text-white mb-1 font-weight-500">Edit Profile</p>
+							<h2 class="mt-0 font-weight-500">Work Experience</h2>
+						</div> 
+					</div>
+				</div> 
+			</div> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 mob-pt-25 mob-col-100 overflow-content edit-work-height"> 
+					<div class="custom_form py-4 px-2 mob-p-0">
+						<form method="post" action=""> 
+							<div class="form-group mb-4 w-100"> 
+								<label class="label font-weight-600 font-14 mob-font-13" for="first">Current Status</label> 
+								<div class="wrapper-form py-3 px-1 d-flex ">
+									<div class="form-group custom_checkbox m-0 col-sm-4 small-pl-5">
+										<input type="checkbox" id="post" checked="">
+										<label for="post" class="m-0 font-weight-500 mob-font-10 small-font-8 mob-font-weight-700 text-secondary active">Fulltime Freelancer</label>
+									</div> 
+									<div class="form-group custom_checkbox m-0 col-sm-4 small-p-0 mob-pl-0">
+										<input type="checkbox" id="freelancer">
+										<label for="freelancer" class="m-0 font-weight-500 mob-font-10 small-font-8 mob-font-weight-700 text-secondary">Part-time Freelancer</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="label font-weight-600 font-14 mob-font-13" for="first">Work Experience</label>
+								<div class="card wrapper-form">
+									<div class="card-body">
+										<div class="row m-0 align-items-center py-3 px-2 mob-pr-0 mob-pl-0 mob-justify-content-between">
+											<div class="col-7 col-sm-10">
+												<h2 class=" text-capitalize text-dark-black font-18 m-0 mob-font-14 font-weight-500">Grappus</h2> 
+												<div class="form-group mb-0 pt-1 mob-hidden">
+													<span class="sub_title font-13 font-weight-500 text-capitalize">UI UX Designer</span>
+													<span class="sub_title font-13 font-weight-500 px-4 text-capitalize">Gurugram</span>
+													<span class="sub_title font-13 font-weight-500 text-capitalize">September 2016 - Present</span>
+												</div>
+											</div> 
+											<div class="col-5 col-sm-2 modal-tab tabs-icon">
+												<div class="text-right">
+													<span><i class="fas fa-chevron-down text-light-gray font-20 mob-font-14 pl-3 collacteral position-relative"></i></span>
+													<span><i class="fas fa-times text-light-gray font-20 mob-font-14 pl-3"></i></span>
+												</div>
+											</div> 
+										</div> 
+									</div> 
+								</div>
+								<div class="custom_form wrapper-form p-4 mb-4 hidden tabs-form-2" style="margin-top:-6px;"> 
+									<form method="post" action="">
+										<div class="row m-0">
+											<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+												<label class="label font-weight-600" for="first">Company</label>
+												<input type="text" class="form-control email pl-3" placeholder="Bojan">
+											</div> 
+											<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+												<label class="label font-weight-600" for="primary">Designation</label>
+												<div class="filter-dropdown wrapper-dropdown">
+													<div class="select">
+														<select id="mounth">
+															<option value="hide">Enter Details here</option>
+															<option value="male">UI UX Designer</option>
+															<option value="female">Web Designer</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div>
+											<div class="form-group col-sm-12 p-0 mb-4 mob-p-0">
+												<div class="form-group custom_checkbox m-0">
+													<input type="checkbox" id="role" checked>
+													<label for="role" class="m-0 font-weight-500 text-secondary active">I am currently working in this role</label>
+												</div> 
+											</div>
+											<div class="form-group position-relative mb-4 col-sm-6 pl-0 mob-p-0">
+												<label class="label font-weight-600" for="primary">Start date</label>
+												<div class="d-flex align-items-center">
+													<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+														<div class="select">
+															<select id="mounth">
+																<option value="hide">Month</option>
+																<option value="male">January</option>
+																<option value="female">February</option>
+															</select> 
+														</div>
+														<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+													</div>
+													<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+														<div class="select">
+															<select id="mounth">
+																<option value="hide">Year</option>
+																<option value="male">January</option>
+																<option value="female">February</option>
+															</select> 
+														</div>
+														<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+													</div>
+												</div> 
+											</div>
+											<div class="form-group position-relative mb-4 col-sm-6 pr-0 disabled mob-p-0">
+												<label class="label font-weight-600" for="primary">End date</label>
+												<div class="d-flex align-items-center">
+													<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+														<div class="select">
+															<select id="mounth">
+																<option value="hide">--</option>
+																<option value="male">January</option>
+																<option value="female">February</option>
+															</select> 
+														</div>
+														<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+													</div>
+													<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+														<div class="select">
+															<select id="mounth">
+																<option value="hide">--</option>
+																<option value="male">January</option>
+																<option value="female">February</option>
+															</select> 
+														</div>
+														<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+													</div>
+												</div> 
+											</div>
+											<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+												<label class="label font-weight-600" for="first">Location</label>
+												<input type="text" class="form-control email pl-3" placeholder="Enter details here">
+											</div> 
+											<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+												<label class="label font-weight-600" for="primary">Industry</label>
+												<div class="filter-dropdown wrapper-dropdown">
+													<div class="select">
+														<select id="mounth">
+															<option value="hide">Select industry</option>
+															<option value="male">Print & Publishing</option>
+															<option value="female">Software</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow"></i>
+												</div>
+											</div>
+											<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+												<label class="label font-weight-600" for="first">Website URL</label>
+												<input type="text" class="form-control email pl-3" placeholder="Enter URL">
+											</div>  
+										</div>  
+										<div class="form-group text-right pr-3 pt-3">
+											<button type="button" class="main-btn px-4">Save</button> 
+										</div>  
+									</form>    
+								</div> 
+							</div>
+							<div class="border-bottom-2 my-30 mob-my-20"></div>
+							<div class="custom_form wrapper-form p-4 mb-4 mob-p-15"> 
+								<form method="post" action="">
+									<div class="row m-0">
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label font-weight-600" for="first">Company</label>
+											<input type="text" class="form-control email pl-3" placeholder="Bojan">
+										</div> 
+										<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label font-weight-600" for="primary">Designation</label>
+											<div class="filter-dropdown wrapper-dropdown">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Enter Details here</option>
+														<option value="male">UI UX Designer</option>
+														<option value="female">Web Designer</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow"></i>
+											</div>
+										</div>
+										<div class="form-group col-sm-12 p-0 mb-4 mob-p-0">
+											<div class="form-group custom_checkbox m-0">
+												<input type="checkbox" id="role" checked>
+												<label for="role" class="m-0 font-weight-500 text-secondary active">I am currently working in this role</label>
+											</div> 
+										</div>
+										<div class="form-group position-relative mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label font-weight-600" for="primary">Start date</label>
+											<div class="d-flex align-items-center">
+												<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+													<div class="select">
+														<select id="mounth">
+															<option value="hide">Month</option>
+															<option value="male">January</option>
+															<option value="female">February</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+												</div>
+												<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+													<div class="select">
+														<select id="mounth">
+															<option value="hide">Year</option>
+															<option value="male">January</option>
+															<option value="female">February</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+												</div>
+											</div> 
+										</div>
+										<div class="form-group position-relative mb-4 col-sm-6 pr-0 disabled mob-p-0">
+											<label class="label font-weight-600" for="primary">End date</label>
+											<div class="d-flex align-items-center">
+												<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+													<div class="select">
+														<select id="mounth">
+															<option value="hide">--</option>
+															<option value="male">January</option>
+															<option value="female">February</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+												</div>
+												<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+													<div class="select">
+														<select id="mounth">
+															<option value="hide">--</option>
+															<option value="male">January</option>
+															<option value="female">February</option>
+														</select> 
+													</div>
+													<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+												</div>
+											</div> 
+										</div>
+										<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+											<label class="label font-weight-600" for="first">Location</label>
+											<input type="text" class="form-control email pl-3" placeholder="Enter details here">
+										</div> 
+										<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+											<label class="label font-weight-600" for="primary">Industry</label>
+											<div class="filter-dropdown wrapper-dropdown">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Select industry</option>
+														<option value="male">Print & Publishing</option>
+														<option value="female">Software</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow"></i>
+											</div>
+										</div>
+										<div class="form-group mb-4 col-sm-12 p-0 mob-p-0">
+											<label class="label font-weight-600" for="first">Website URL</label>
+											<input type="text" class="form-control email pl-3" placeholder="Enter URL">
+										</div>  
+									</div>  
+									<div class="form-group text-right pt-3">
+										<button type="button" class="main-btn px-4">Save</button> 
+									</div>  
+								</form>   
+							</div>   
+						</form>
+					</div>
+					<div class="row mt-2 bg-shadow-top mobile-edit-collateral">
+						<div class="col-sm-12 p-0 text-right pr-3 py-3">
+							<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+							<button type="button" class="main-btn px-4 ml-2">Save</button>
+						</div>
+					</div>  
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 p-0 bg-shadow-top desktop-ipad-show">
+					<div class="form-group text-right pr-3 pt-3">
+						<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+						<button type="button" class="main-btn px-4 ml-2">Save</button>
+					</div>
+				</div> 
+			</div> 
+		</div> 
+	  </div>
+	</div>
+</div>
+
+
+<!-- Edit Education Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="EditEducationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 remove-pd"> 
+					<div class="profile-creator">
+						<div class="px-4 py-3">
+							<p class="text-white mb-1 font-weight-500">Edit Profile</p>
+							<h2 class="mt-0 font-weight-500">Education</h2>
+						</div> 
+					</div>
+				</div> 
+			</div> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 mob-pt-25 mob-col-100 overflow-content edit-work-height"> 
+					<div class="custom_form py-4 px-2 mob-p-0">
+						<div class="card bg-purple">
+							<div class="card-body">
+								<div class="sub_dflex py-3 px-4 collaterals mob-justify-content-between small-p-15">
+									<h2 class=" text-capitalize text-white font-18 mob-font-14 m-0 font-weight-500">Web Design</h2> 
+									<div class="form-group mb-0 pl-3 w-60 mob-hidden">
+										<span class="sub_title text-white">5 years experience</span>
+										<span class="sub_title text-white px-4">Average time taken 2 weeks</span>
+										<span class="sub_title text-white"><i class="fas fa-rupee-sign pr-1"></i>10k - <i class="fas fa-rupee-sign pr-1"></i>20k</span>
+									</div>
+									<div class="w-25 text-right">
+										<span><i class="fas fa-chevron-down font-20 mob-font-14 text-white pl-3 collacteral position-relative"></i></span>
+										<span><i class="fas fa-times text-white font-20 mob-font-14 pl-3"></i></span>
+									</div>
+								</div>  
+							</div> 
+						</div>
+						<div class="wrapper-form p-4 mb-4 hidden"> 
+							<form method="post" action="">
+								<div class="row m-0">
+									<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+										<label class="label font-weight-600" for="first">Name of School</label>
+										<input type="text" class="form-control email pl-3" placeholder="Tagore international school">
+									</div>
+									<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+										<label class="label font-weight-600" for="primary">Course Name</label>
+										<div class="filter-dropdown wrapper-dropdown">
+											<div class="select">
+												<select id="mounth">
+													<option value="hide">Enter Details here</option>
+													<option value="male">UI UX Designer</option>
+													<option value="female">Web Designer</option>
+												</select> 
+											</div>
+											<i class="fas fa-chevron-down select-arrow"></i>
+										</div>
+									</div>  
+									<div class="form-group position-relative mb-4 col-sm-6 pl-0 mob-p-0">
+										<label class="label font-weight-600" for="primary">Start date</label>
+										<div class="d-flex align-items-center">
+											<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Month</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+											<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Year</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+										</div> 
+									</div>
+									<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+										<label class="label font-weight-600" for="primary">End date</label>
+										<div class="d-flex align-items-center">
+											<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">--</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+											<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">--</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+										</div> 
+									</div>  
+								</div>  
+								<div class="form-group text-right pt-3">
+									<button type="button" class="main-btn px-4">Save</button>
+
+								</div>  
+							</form>    
+						</div> 
+						<div class="border-bottom-2 my-30 mob-my-20"></div> 
+						<div class="wrapper-form p-4 mb-4 mob-p-15"> 
+							<form method="post" action="">
+								<div class="row m-0">
+									<div class="form-group mb-4 col-sm-6 pl-0 mob-p-0">
+										<label class="label font-weight-600" for="first">Name of School</label>
+										<input type="text" class="form-control email pl-3" placeholder="Tagore international school">
+									</div>
+									<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+										<label class="label font-weight-600" for="primary">Course Name</label>
+										<div class="filter-dropdown wrapper-dropdown">
+											<div class="select">
+												<select id="mounth">
+													<option value="hide">Enter Details here</option>
+													<option value="male">UI UX Designer</option>
+													<option value="female">Web Designer</option>
+												</select> 
+											</div>
+											<i class="fas fa-chevron-down select-arrow"></i>
+										</div>
+									</div>  
+									<div class="form-group position-relative mb-4 col-sm-6 pl-0 mob-p-0">
+										<label class="label font-weight-600" for="primary">Start date</label>
+										<div class="d-flex align-items-center">
+											<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Month</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+											<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">Year</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+										</div> 
+									</div>
+									<div class="form-group position-relative mb-4 col-sm-6 pr-0 mob-p-0">
+										<label class="label font-weight-600" for="primary">End date</label>
+										<div class="d-flex align-items-center">
+											<div class="filter-dropdown wrapper-dropdown w-48 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">--</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+											<div class="filter-dropdown wrapper-dropdown w-48 ml-3 position-relative">
+												<div class="select">
+													<select id="mounth">
+														<option value="hide">--</option>
+														<option value="male">January</option>
+														<option value="female">February</option>
+													</select> 
+												</div>
+												<i class="fas fa-chevron-down select-arrow" style="top: 20px; right: 20px;"></i>
+											</div>
+										</div> 
+									</div>  
+								</div>  
+								<div class="form-group text-right pt-3">
+									<button type="button" class="main-btn px-4">Save</button>
+
+								</div>  
+							</form>   
+						</div>
+						<div class="row mt-2 bg-shadow-top mobile-edit-collateral">
+							<div class="col-sm-12 p-0 text-right pr-3 py-3">
+								<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+								<button type="button" class="main-btn px-4 ml-2">Save</button>
+							</div>
+						</div>   
+					</div> 
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 p-0 bg-shadow-top desktop-ipad-show">
+					<div class="form-group text-right pr-3 pt-3">
+						<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+						<button type="button" class="main-btn px-4 ml-2">Save</button>
+					</div>
+				</div> 
+			</div> 
+		</div> 
+	  </div>
+	</div>
+</div>
+
+<!-- Edit Web Links Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="EditWebLinkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 remove-pd"> 
+					<div class="profile-creator">
+						<div class="px-4 py-3">
+							<p class="text-white mb-1 font-weight-500">Edit Profile</p>
+							<h2 class="mt-0 font-weight-500">Web Links & Attachments</h2>
+						</div> 
+					</div>
+				</div> 
+			</div> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 mob-pt-25 mob-col-100 overflow-content edit-work-height"> 
+					<div class="custom_form py-4 px-2 mob-p-0">
+						<form method="post" action="">
+							<div class="row m-0">
+								<div class="form-group mb-2 col-sm-12 p-0">
+									<label class="label font-weight-600 font-16 mob-font-13" for="first">Link the accounts showcasing your work</label> 
+								</div> 
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0">
+									<span class="w-15 mob-w-50 link-1"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here"> 
+								</div>  
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0"> 
+									<span class="w-15 mob-w-50 link-2"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here">  
+								</div>
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0"> 
+									<span class="w-15 mob-w-50 link-3"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here">  
+								</div>
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0"> 
+									<span class="w-15 mob-w-50 link-4"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here">  
+								</div>
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0"> 
+									<span class="w-15 mob-w-50 link-5"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here">  
+								</div>
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0"> 
+									<span class="w-15 mob-w-50 link-6"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here">  
+								</div>
+								<div class="form-group mb-3 col-sm-12 p-0 d-flex align-items-center mob-p-0 ipad-pr-0"> 
+									<span class="w-15 mob-w-50 link-7"></span> 
+									<input type="text" class="form-control email w-98 ml-3" placeholder="Enter URL here">  
+								</div>
+								<div class="form-group mb-3 col-sm-12 p-0 mob-p-0 ipad-pr-0">
+									<label class="label font-weight-600 font-16 mob-font-13 w-100 pt-3 pb-2" for="first">Upload resume</label>
+									<div class="upload-btn-wrapper w-100">
+										<button class="btn upload-file w-100 font-13 font-weight-500 text-secondary">
+											<span class="font-18 mob-font-13 d-block text-success">
+												<i class="fas fa-cloud-upload-alt d-block font-50 pb-2"></i>
+												Browse folders here</span> 
+											Supports JPG, JPG2000 and PNG</button>
+										<input type="file" name="myfile" />
+									</div>
+								</div>
+								<div class="form-group col-sm-12 p-0 mt-4 mb-4 mob-p-0 ipad-pr-0">
+									<div class="form-group custom_checkbox custom_after m-0">
+										<input type="checkbox" id="terms" checked>
+										<label for="terms" class="m-0 font-weight-600 font-16 mob-font-14 text-secondary active">I agree to the Terms & Conditions</label>
+									</div> 
+								</div> 
+							</div>  
+							<div class="form-group text-right pt-3">
+								<button type="button" class="main-btn px-4">Save</button>
+							</div>  
+						</form>
+					</div>
+					<div class="row mt-2 bg-shadow-top mobile-edit-collateral">
+						<div class="col-sm-12 p-0 text-right pr-3 py-3">
+							<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+							<button type="button" class="main-btn px-4 ml-2">Save</button>
+						</div>
+					</div>  
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 p-0 bg-shadow-top desktop-ipad-show">
+					<div class="form-group text-right pr-3 pt-3">
+						<button type="button" class="main-btn bg-light-gray font-weight-600 cursor-pointer" data-dismiss="modal">Cancel</button> 
+						<button type="button" class="main-btn px-4 ml-2">Save</button>
+					</div>
+				</div>  
+			</div> 
+		</div> 
+	  </div>
+	</div>
+</div>
+
+
+<!-- Project View Modal -->
+<div class="modal fade custom_form user_form_section custom_Modal_Box" style="padding-right:0px;" id="editWorkSection" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered modal-lg mob-modal-xs" role="document"> 
+		<div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0 align-items-center">
+
+				<!-- Mobile Content--> 
+				<div class="w-100 mobile-only-show">
+					<div class="row m-0 py-4 px-3 border-bottom-1 mob-p-15">
+						<div class="col-10 col-sm-10 mob-pl-0">
+							<div class="w-100">
+								<h2 class="font-18 font-weight-600 mob-font-14">Lead Overview - Dark</h2>
+							</div>
+							<div class="w-100 d-flex align-items-center">
+								<div>
+									<p class="mb-0 review"><img src="images/account-manager.png" alt="profile" title="" width="25"></p>
+								</div>
+								<div class="pl-2"> 
+									<span class="profile-subTitle font-weight-500 font-15 text-sub mob-font-12 text-capitalize">By Bojan Jonic</span>
+								</div>
+							</div> 
+						</div>
+						<div class="col-2 col-sm-2 profile-inner">
+							<div class="user-work-edit" class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+							<div class="dropdown_btn"> 
+								<div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton"> 
+									<a class="dropdown-item font-weight-600" href="#">Edit</a>
+									<a class="dropdown-item font-weight-600" href="#">Get review</a> 
+									<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> 
+
+				<div class="col-sm-7 bg-light-sky border-top-left-radius border-bottom-left-radius py-11-percentage mob-p-10">
+					<div class="user-work-section">
+						<img src="images/user-work.jpg" alt="work" class="img-fluid"> 
+					</div>
+					<div class="user-work-thumbnail">
+						<span class="thumb-img active">
+							<img src="images/user-work.jpg" alt="work" class="img-fluid">
+						</span>
+						<span class="thumb-img">
+							<img src="images/user-work.jpg" alt="work" class="img-fluid">
+						</span>  
+					</div> 
+				</div>
+
+				<div class="col-sm-5 overflow-content user-work-content p-0">
+					<!-- Desktop Content -->
+					<div class="desktop-ipad-show">
+						<div class="row m-0 py-4 px-3 border-bottom-1">
+							<div class="col-10 col-sm-10">
+								<div class="w-100">
+									<h2 class="font-18 font-weight-600 mob-font-14">Lead Overview - Dark</h2>
+								</div>
+								<div class="w-100 d-flex align-items-center">
+									<div>
+										<p class="mb-0 review"><img src="images/account-manager.png" alt="profile" title="" width="25"></p>
+									</div>
+									<div class="pl-2"> 
+										<span class="profile-subTitle font-weight-500 font-15 text-sub mob-font-12 text-capitalize">By Bojan Jonic</span>
+									</div>
+								</div> 
+							</div>
+							<div class="col-2 col-sm-2 profile-inner">
+								<div class="user-work-edit" class="dropdown-toggle" d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-ellipsis-h"></i>
+								</div>
+								<div class="dropdown_btn"> 
+									<div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton"> 
+										<a class="dropdown-item font-weight-600" href="#">Edit</a>
+										<a class="dropdown-item font-weight-600" href="#" data-toggle="modal" data-target="#RequestReviewModal">Get review</a> 
+										<a class="dropdown-item font-weight-600 text-danger" href="#">Delete</a> 
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div> 
+					<div class="row m-0 p-3 mob-py-15-px-0">
+						<div class="col-sm-12 pb-3">
+							<h2 class="text-third text-capitalize font-13 mb-1 font-weight-600 mob-font-12">About the project</h2>
+							<p class="font-weight-500 mb-1 text-black mob-font-12">
+								I am an experience freelancer graphic designer based in Dehradun, Himachal Pradesh. I have worked in the creative industry.
+							</p>
+							<div class="d-flex align-items-center flex-wrap">
+								<div class="tags">Branding</div>
+								<div class="tags">Graphic Design</div> 
+							</div> 
+						</div>
+						<div class="col-sm-12 pb-3">
+							<h2 class="text-third font-13 font-weight-600 mob-font-12 mb-0">Tools used</h2>
+							<div class="w-100 d-flex align-items-center flex-wrap">
+								<div class="d-flex align-items-center mt-mr-mb-8">
+									<div class="">
+										<p class="mb-2 tools"><img src="images/tool-1.png" alt="profile" title="" width="35" class="rounded-0"></p>
+									</div>
+									<div class="pl-2">
+										<h2 class="text-capitalize mb-2 font-14 font-weight-500 text-black mob-font-12">Photoshop</h2> 
+									</div>
+								</div> 
+								<div class="d-flex align-items-center mt-mr-mb-8">
+									<div class="">
+										<p class="mb-2 tools"><img src="images/tool-3.png" alt="profile" title="" width="35" class="rounded-0"></p>
+									</div>
+									<div class="pl-2">
+										<h2 class="text-capitalize mb-2 font-14 font-weight-500 text-black mob-font-12">Illustrator</h2> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 pb-3">
+							<h2 class="text-third font-13 font-weight-600 mob-font-12 mb-1">Created for</h2>
+							<p class="w-60 mob-w-100 font-weight-500 mb-1 text-black mob-font-12">
+								 Anagram Studio, New Delhi Started 23rd August 2019.
+							</p>
+						</div>
+						<div class="col-sm-12 pb-3">
+							<h2 class="text-third font-13 font-weight-600 mob-font-12 mb-1">Bojan's role</h2>
+							<p class="font-weight-500 mb-1 text-black mob-font-12">
+								 Lorem ipusm dolor sit amet, consectetur adipiscing
+							</p>
+						</div> 
+						<div class="col-sm-12 pb-3">
+							<h2 class="text-third font-13 font-weight-600 mob-font-12 mb-1">Keywords</h2>
+							<div class="d-flex align-items-center flex-wrap">
+								<div class="tags">Branding</div>
+								<div class="tags">Graphic Design</div> 
+							</div> 
+						</div>
+						<div class="col-sm-12">
+							<h2 class="text-third font-13 font-weight-600 mob-font-13 mb-1">Published: 15 October 2019</h2>
+							<div class="d-flex align-items-center flex-wrap"> 
+								<span><i class="fas fa-male published"></i></span> 
+								<span><i class="fas fa-dollar-sign published"></i></span> 
+								<span><i class="fas fa-equals published"></i></span> 
+							</div> 
+						</div>  
+					</div>
+				</div>
+			</div> 
+		</div> 
+		</div>
+  	</div>
+</div>
+
+<!-- Request a review Modal -->
+<div class="modal fade custom_form verify_modal edit-basic-profile" style="padding-right:0px;" id="RequestReviewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<span class="close_icon" data-dismiss="modal" aria-label="Close"><img src="images/close.png" class="img-fliud" width="35"></span>
+	<div class="modal-dialog modal-dialog-centered ipad-screen-650" role="document">
+	  <div class="modal-content">  
+		<div class="modal-body"> 
+			<div class="row m-0"> 
+				<div class="col-sm-12 p-0"> 
+					<div class="profile-creator ml-05 mob-m-0">
+						<div class="p-4"> 
+							<h2 class="mt-0 font-weight-500 m-0 pt-1 font-18 mob-font-14">Request a review</h2>
+						</div> 
+					</div>
+				</div> 
+			</div>
+			<div class="row m-0"> 
+				<div class="col-sm-12 col-md-12 col-lg-12 overflow-content basic-height">  
+					<div class="custom_form py-3">
+						<form method="post" action="">
+							<div class="row m-0"> 
+								<div class="form-group mb-4 col-sm-12">
+									<label class="label font-weight-600 mb-3" for="first">Who should review your project?</label>
+									<div class="font-weight-600 font-12 text-dark-black d-flex mb-3">
+										<div><i class="fas fa-arrow-right mr-2 text-secondary"></i></div>
+										<div>Make Sure lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+									</div> 
+									<div class="mb-0 font-weight-600 font-12 text-dark-black d-flex">
+										<div><i class="fas fa-arrow-right mr-2 text-secondary"></i></div>
+										<div>Make Sure lorem ipsum dolor sit amet, consectetur adipiscing</div>
+									</div> 
+								</div> 
+								<div class="form-group mb-4 col-sm-12">
+									<label class="label font-weight-600" for="first">Name</label>
+									<input type="text" class="form-control email" placeholder="Enter details here">
+								</div> 
+								<div class="form-group mb-3 col-sm-12">
+									<label class="label font-weight-600" for="last">Email</label>
+									<input type="email" class="form-control email" placeholder="Enter details here">
+								</div>  
+							</div>  
+							<div class="form-group col-sm-12 text-right pr-3 pt-3"> 
+								<button type="button" class="main-btn w-100 px-4">Send request</button>
+							</div>  
+						</form>
+					</div> 
+				</div> 
+			</div>  
+		</div> 
+	  </div>
+	</div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<script src='https://harvesthq.github.io/chosen/chosen.jquery.js'></script>
+<script src="js/main.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#datepicker').datepicker({
+			uiLibrary: 'bootstrap4'
+		}); 
+		$(".multipleChosen").chosen({
+			placeholder_text_single: "Select an option",
+			no_results_text: "Oops, nothing found!"
+		});
+	}) 
+</script>
+</body>
+</html>

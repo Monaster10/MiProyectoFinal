@@ -1,0 +1,212 @@
+.Cont-gen {
+ width: 100%;
+ min-height: 40%;
+ padding-left: 100px;
+ padding-right: 100px;
+ padding-top: 50px;
+ 
+}
+
+.Principal-Title {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ color: #656565;
+ margin-top: 80px;
+ margin-bottom: 20px;
+}
+
+.Cont-Ship {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+
+ margin-top: 50px;
+ margin-bottom: 50px;
+ min-height: 100%;
+}
+
+.Cont-Izq {
+ width: 60%;
+ box-shadow: 0 0 0.3em rgba(0,0,0,0.2);
+ transition-property: box-shadow;
+ transition-duration: 0.3s;
+ color: rgb(58, 58, 58);
+ border-radius: 12px;
+ min-height: 100% !important;
+ margin-right: 15px;
+ text-align: left;
+
+}
+
+.Cont-Izq:hover {
+ box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.352);
+ text-decoration: none;
+ color: rgb(58, 58, 58);
+}
+
+.Cart-Der {
+ width: 40%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ height: 100%;
+}
+
+.Card-Detalle {
+ width: 28rem;
+ box-shadow: 0 0 0.3em rgba(0,0,0,0.2);
+ padding: 25px;
+ min-height: 25rem;
+}
+
+.Card-Detalle:hover {
+ box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.352);
+ transition: all 0.3s;
+}
+
+.Padd {
+ padding: 15px;
+}
+
+.Cont-Der:hover {
+ box-shadow: 0 0 1.1em rgba(0, 0, 0, 0.4);
+ text-decoration: none;
+ color: rgb(58, 58, 58);
+}
+
+.Titul {
+ height: 100px;
+ margin-bottom: 30px;
+ width: 100%;
+ text-align: center;
+ color: #ffffff;
+ border: 1px solid #1C7DB9;
+ background: url('img/Card.png'),#1C7DB9; /*  AGREGAR LA IMAGEN PRO  */
+ border-radius: 12px 12px 0 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.ContBotones {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.Cont-Pagos{
+    padding: 0 15px;
+}
+
+
+
+.form-group {
+ margin-bottom: 30px;
+}
+
+.form-control {
+ height: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+ -webkit-appearance: none; 
+ margin: 0; 
+}
+
+input[type=number] {
+ -moz-appearance:textfield; 
+}
+
+.Envio {
+ width: 100%;
+ margin-top: 50px;
+ display: flex; 
+ align-items: center;
+ justify-content: center;
+ height: 50px;
+}
+
+.Envio * {
+ height: 100%;
+ margin: 0; 
+ padding: 0;
+ display: flex; 
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ margin-right: 10px;
+}
+
+.Arri-Der {
+ width: 100%;
+ min-height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 60px;
+}
+
+.ContBotones {
+ margin-bottom: 70px;
+}
+
+@media screen and (min-width: 981px) and (max-width: 1295px) {
+
+ .Cont-gen {
+  padding-left: 15px;
+  padding-right: 15px;
+ }
+ 
+}
+
+@media screen and (max-width: 981px) {
+ 
+ .Cont-gen {
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+
+ .Cont-Ship {
+  display: block;
+  min-height: 1000px;
+  padding: 8px;
+  margin-bottom: 20px;
+ }
+
+ .Cont-Izq {
+  width: 100%;
+  min-height: 480px !important;
+  margin-bottom: 50px;
+  margin-right: 0;
+ }
+
+ .Cart-Der {
+  width: 100%;
+  height: 550px !important;
+  margin-left: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+ }
+
+}
+
+@media screen and (max-width:700px) {
+ 
+ .Titul {
+  font-size: 20px;
+ }
+
+ .Tipo-Env {
+  font-size: 17px;
+ }
+
+ .Principal-Title {
+  font-size: 27px;
+ }
+
+}
